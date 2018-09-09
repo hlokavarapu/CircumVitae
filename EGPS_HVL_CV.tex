@@ -1,0 +1,405 @@
+%        10        20        30        40        50        60       70        80        90
+%23456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456
+
+% \documentclass[11pt]{article} %\documentclass[final,10pt,reqno, oneside,dvipsnames]{article}
+
+% WARNING: Use of 'twoside' will cause \marginpar to flip from right to left margin, depending
+% on the page.
+
+\documentclass[11pt]{ltxdoc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Template provided by PROFESSOR ELBRIDGE GERRY PUCKETT
+%%%%%%%%%%%%%%%%%%% Harsha Lokavarapu CURRICULUM VITAE %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% PROFESSOR ELBRIDGE GERRY PUCKETT
+% DEPARTMENT OF MATHEMATICS
+% UNIVERSITY OF CALIFORNIA, DAVIS
+%
+% Original LaTeX file created by
+%
+%   Wednesday, July 04, 2018 08:49:51 PDT
+%
+%
+% REVISION HISTORY:
+%
+%   Revision 1.00
+%
+%     Revision 1.00: Wednesday, July   04, 2018 08:49:51 PDT
+%     Revision 1.01: Friday,    July   06, 2018 12:06:23 PDT
+%     Revision 1.02: Friday,    July   13, 2018 10:16:26 PDT
+%     Revision 1.03: Monday,    July   16, 2018 12:48:14 MDT
+%     Revision 1.04: Tuesday,   July   17, 2018 12:08:31 MDT
+%     Revision 1.05: Tuesday,   July   24, 2018 13:58:42 PDT
+%     Revision 1.06: Wednesday, July   25, 2018 10:42:22 PDT
+%     Revision 1.07: Thursday,  July   26, 2018 16:20:51 PDT
+%     Revision 1.08: Saturday,  July   28, 2018 13:45:19 PDT
+%     Revision 1.09: Wednesday, August 01, 2018 17:09:54 PDT
+%     Revision 1.10: Thursday,  August 03, 2018 17:14:29 PDT
+%     Revision 1.11: Thursday,  August 09, 2018 14:28:34 PDT
+%     Revision 1.12: Friday,    August 10, 2018 14:28:34 PDT
+%     Revision 1.13: Saturday,  August 11, 2018 16:07:35 PDT
+%     Revision 1.13: Sunday,    August 12, 2018 13:21:15 PDT
+%     Revision 1.14: Monday,    August 13, 2018 11:40:24 PDT
+%     Revision 1.14: Tuesday,   August 14, 2018 16:00:24 PDT
+%     Revision 1.15: Wednesday, August 15, 2018 10:15:04 PDT
+%     Revision 1.16: Thursday,  August 16, 2018 10:53:07 PDT
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TURN OFF BibTeX? %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If there is no need for BibTeX in this document turn it off, since it creates unwanted 
+% files.
+
+\let\nobibtex = t
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SET UP PAGE PARAMETERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% EGP's preferred page style for notes, homework assignments, exams, etc.
+
+% Margins, paragraph indents, space between paragraphs if any, etc. Good references 
+% include page 85 of "The LaTeX Companion" by Frank Mittelbach and Michel Goossens and 
+% page 260 of "Math Into LaTeX" by George Gratzer.
+
+% Enlarge the width and height of the printed page
+
+\setlength{\textwidth }{7.50 in}
+\setlength{\textheight}{9.50 in} % \textheight     = 9.25 in
+
+% Space between the end of the odd and even side margins and the beginning of the text.
+
+\setlength{\oddsidemargin }{0.0 in}
+\setlength{\evensidemargin}{0.0 in}
+
+% The side margins are 1.0 inch plus \hoffset and the top margins is 1.0 inch plus 
+% \voffset. According to "The LaTeX Companion" the default values are \hoffset = 00 pt 
+% and \voffset = 00 pt.
+
+\setlength{\hoffset}{-0.50 in}
+\setlength{\voffset}{-0.50 in}
+
+% If there is no header in this document, set each of the following values to zero.
+
+% This is the amount of space between the BOTTOM of the HEAD and the TOP of the BODY. 
+% According to "Math Into LaTeX"  by George Gratzer the default values for LaTeX's 
+% article document is \headsep = 25 pt.
+
+\setlength{\headsep}{12 pt}
+
+% Package Fancyhdr Warning: \headheight = 12 pt is too small. Make it at least 14.0pt. 
+% According to "Math Into LaTeX"  by George Gratzer the default value for LaTeX's article 
+% document is \headheight = 12 pt.
+
+\setlength{\headheight}{14 pt}
+
+% This is the amount of space between the top of the page and the TOP of the header. According to "Math
+% Into LaTeX"  by George Gratzer the default value for LaTeX's article document is \topmargin = 16 pt.
+% \headheight = 12pt, and .
+
+\setlength{\topmargin }{00 pt}
+
+% This is the amount of space between the TOP OF THE BODY and THE BOTTOM OF THE FIRST 
+% line of text on the page. According to "Math Into LaTeX" by George Gratzer the default
+% value for LaTeX's article documents is \topskip = ?? pt.
+
+\setlength{\topskip}{12 pt}
+
+% This is the amount of space between the last line on the page and the footer. According 
+% to "The LaTeX Companion" and "Math Into LaTeX" the default value is \footskip = 30 pt.
+
+\setlength{\footskip}{18 pt}
+
+% I like space between paragraphs, since it makes the document more readable. However, 
+% this does not seem to change the spacing between paragraphs contained in an item of a 
+% list.
+
+\setlength{\parskip}{12 pt} % default: \parskip        = 12  pt
+
+% Comment out the following line to use the default amount to indent the first line of 
+% each paragraph.
+
+\setlength{\parindent}{00 pt}
+
+% Add an underline of text that breaks the line properly with \uline{text} ...
+
+\usepackage[normalem]{ulem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LOAD THE "enumitem" PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+% \setenumerate[1]{labelindent=0pt,itemindent=12pt}
+
+\setlength{\labelwidth}{00 pt}
+\setlength{\leftmargin}{0.0in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Set Up The "Version" Package %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This environment allows one to include text in the LaTeX file that is not printed when it
+% is compiled.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LOAD AMS LaTeX Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% Using the "amsart" or "amsbook" document class instead of the standard LaTeX "article"
+% document class provides all (or at least most) of the AMS math macros. However, it also
+% puts a colon in the description list environment, which I don't like.
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+% Added by EGP for script fonts such as script L for a linear operator: \mathscr{L}
+
+\usepackage[mathscr]{euscript}
+
+% This package provides an arrow \longrightarrow, that is longer than AMSMATH's
+% \xrightarrow and \xrightarrow.
+
+\usepackage{extarrows} % (extensible arrows)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SET UP THE "VERSION" PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This environment allows one to include text in the LaTeX file that is not printed when % it is compiled
+
+% CAUTION: Do not use "space" as the name of a version environment, since it causes problems with LaTeX's memory
+
+\usepackage{version}
+
+\includeversion{SOLUTIONS}
+\excludeversion{NO_SOLUTIONS}
+
+\excludeversion{HIDE}
+
+
+
+\usepackage{times}
+
+
+\usepackage{wrapfig}
+
+\usepackage{epsfig}
+\usepackage{subfig}
+\usepackage{ifpdf}
+\usepackage{tikz}
+\usetikzlibrary{shapes,calc}
+\usepackage[utf8]{inputenc}
+%\usepackage[upright]{fourier}
+\usetikzlibrary{matrix,arrows,decorations.pathmorphing}
+
+\usepackage[]{caption}
+\setlength{\abovecaptionskip}{24pt}
+\setlength{\belowcaptionskip}{24pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LOAD THE HYPERREF PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The basic usage with the standard settings is straightforward. Just load the package in 
+% the preamble, at the end of all the other packages but prior to other settings.
+
+% From the `Introduction' to the hyperref manual: Make sure it comes last of your loaded 
+% packages, to give it a fighting chance of not being over-written, since its job is to 
+% redefine many LATEX commands. Hopefully you will find that all cross-references work 
+% correctly as hypertext. For example, \section commands will produce a bookmark and a 
+% link, whereas \section* commands will only show links when paired with a corresponding 
+% \addcontentsline command.
+
+% I think the default values for "bookmarks" is 'false' and for "bookmarksopen" is 'false'
+
+\usepackage[bookmarksopen=false]{hyperref}
+
+\hypersetup{colorlinks=true}
+
+\hypersetup{linkcolor=blue}
+
+\hypersetup{urlcolor=blue} 
+
+\hypersetup{pdftitle={Harsha Lokavarapu's CV}}
+
+\hypersetup{pdfcreator={\textcopyright Professor Elbridge Gerry Puckett 2018}}
+
+\hypersetup{pdfauthor={Professor E.G. Puckett 2018}}
+
+% This is a package to remember when writing NSF proposals.
+
+% \usepackage[margin=1in]{geometry}
+
+% And here is another one ...
+
+%\usepackage{nopageno}
+
+\usepackage{bbold}
+\usepackage{wasysym}
+
+\setlength{\parindent}{00pt}
+
+\begin{document}
+
+\begin{center}
+  \textbf{Harsha Lokavarapu}      \\ [06pt]
+  5221 Ferrera Ct                 \\
+  Pleasanton, California 94588    \\
+  lokavarapuh@gmail.com           \\  [3pt]
+\end{center}
+
+%\href{https://orcid.org/0000-0002-6589-7395}{ORCID ID}
+
+\vskip 12pt
+
+\begin{center}
+	\textbf{\underline{Professional Preparation}}
+\end{center}
+
+\vskip -06pt
+
+\begin{tabular}{llll}
+University of California, Davis              &MS     &Geology       & 2017-- \\
+                                             &       &Thesis advisor Louise H. Kellogg &  \\
+University of California, Davis              &BS     &Computer Science  & 2010-2015       \\
+University of California, Davis              &Minor   &Applied Mathematics & 2010-2015
+\end{tabular}
+
+\vskip 18pt
+
+\begin{center}
+	\textbf{\underline{Computing Skills and Experiences}}
+\end{center}
+
+\textbf{\underline{Languages}}
+\begin{enumerate}
+  \item \underline{Continuous Integration Tools:}
+    \begin{enumerate}
+      \item Jenkins - touched every CIG code
+      \item Travis
+    \end{enumerate}
+  \item \underline{Code Development Contributions}
+    \begin{enumerate}
+      \item Advanced Solver for Problems in Earth's ConvecTion (ASPECT)
+      \item Calypso
+      \item Generalized Reservoir Modeling (Ms. Thesis Project)
+    \end{enumerate}
+  \item \underline{Parallel Processing/High Performance Computing (HPC)}
+    \begin{enumerate}
+      \item NSF Texas Advanced Computing Center:
+      \begin{enumerate}
+        \item Stampede and Stampede 2.0 with Xeon Phi Processors
+        \item Maverick - Nvidia K20 GPU cluster
+      \end{enumerate}
+      \item Math and Physical Science (MPS) HPC Cluster
+      \begin{enumerate}
+        \item Ymir
+        \item Peloton
+      \end{enumerate}
+      \item SLURM
+      \item Experience - ran strong and weak scaling tests for
+      \begin{enumerate}
+        \item Calypso - published as poster at Fall AGU 2014
+        \item ASPECT - As part of work associated with DSF paper (not included with published version)
+      \end{enumerate}
+    \end{enumerate}
+  \item \underline{Outside Interests:}
+    \begin{enumerate}
+      \item Virtual Reality - (A-frame)
+      \item 3-D Design/Printing
+      \item Kereas, Tensorflow 
+    \end{enumerate}
+\end{enumerate}
+
+\clearpage
+
+\newpage
+
+\begin{center}
+  \textbf{\underline{Publications}}
+\end{center}
+
+\noindent
+\textbf{\underline{Refereed Journal Publications}}
+
+%\vskip 12pt
+
+\noindent
+\textbf{\underline{Submitted}}
+
+
+\hangindent 20pt
+L.~H.~Kellogg, D. L.~Turcotte, M.~Weisfeiler, $\textrm{H.~Lokavarapu}^@$, S.~Mukhopadhyay, (2018) 
+``Implications of a Reservoir Model for the
+Evolution of Deep Carbon'', 
+\textit{Earth and Planetary Science Letters}, Ms. Ref. No.:  EPSL-D-17-01055
+
+% \vskip 06pt
+
+\noindent
+\textbf{\underline{Accepted}}
+
+% AUGUST 15, 2018 CHECKED!
+\hangindent 20pt
+R.~Gassmoeller,  $\textrm{H.~Lokavarapu}^@$, E.~Heien, E. G.~Puckett, and W.~Bangerth, (2018) 
+``Flexible and scalable particle-in-cell methods with adaptive mesh refinement for geodynamic computations'', 
+\textit{Geochemistry, Geophysics, Geosystems} manuscript 2018GC007508R 
+\href{https://www.math.ucdavis.edu/~egp/PUBLICATIONS/JOURNAL_ARTICLES/ACCEPTED/RG-HL-EH-EGP-WB-2018.pdf}{View Accepted Manuscript}
+
+\noindent
+\textbf{\underline{Appeared}}
+
+\vskip 06pt
+
+
+% AUGUST 16, 2018 CHECKED!
+\hangindent 20pt
+E. G.~Puckett, D. L.~Turcotte, L.~H.~Kellogg,  $\mathrm{Y.~He}^{\dagger}$, $\mathrm{J.~M.~Robey}^{*}$, and 
+$\mathrm{H.~Lokavarapu}^{@}$ (2018)
+``New numerical approaches for modeling thermochemical convection in a compositionally stratified fluid'', 
+Special issue of . \textit{Physics of the Earth and Planetary Interiors} associated with the 15th Studies of the Earth's Deep Interior (SEDI) Symposium (\textit{Phys. Earth. Planet. In.)} \textbf{276}:10–35, 10.1016/j.pepi.2017.10.004
+\href{https://www.math.ucdavis.edu/~egp/PUBLICATIONS/JOURNAL_ARTICLES/APPEARED/2018/EGP-DLT-YH-HL-JMR-LHK-2018.pdf}{View Article}
+
+\noindent
+\textbf{\underline{Poster Presentations}}
+
+% \vskip 12pt
+
+\hangindent 20pt
+L.~H.~Kellogg, $\mathrm{H.~Lokavarapu}^{@}$, D. L.~Turcotte, and S.~Mukhopadhyay (2017) 
+``A reservoir model study of the flux of carbon from the atmosphere, to the continental crust, to the mantle'', 
+\textit{Annual Geophysical Union Fall Meeting 2017}
+
+\hangindent 20pt
+J.~Jiang, A.~P.~Kaloti, H.~R.~Levinson, N.~Nguyen, E.~G.~Puckett, and $\mathrm{H.~Lokavarapu}^{@}$ (2016) 
+``Benchmark Results Of Active Tracer Particles In The Open Souce Code ASPECT For Modelling Convection In The Earth's Mantle'', 
+\textit{Annual Geophysical Union Fall Meeting 2016}
+
+
+\hangindent 20pt
+E.~G.~Puckett, D. L.~Turcotte, L.~H.~Kellogg, $\mathrm{H.~Lokavarapu}^{@}$,  $\mathrm{Y.~He}^{\dagger}$, and $\mathrm{J.~M.~Robey}^{*}$ (2016) 
+``New Numerical Approaches To thermal Convection In A Compositionally Stratified Fluid'', 
+\textit{Annual Geophysical Union Fall Meeting 2016}
+
+\hangindent 20pt
+$\mathrm{H.~Lokavarapu}^{@}$, and H.~Matsui (2015) 
+``Optimization of Parallel Legendre Transform using Graphics Processing Unit (GPU) for a Geodynamo Code'', 
+\textit{Annual Geophysical Union Fall Meeting 2015}
+
+\hangindent 20pt
+J.~A.~Russo, E.~H.~Studley, $\mathrm{H.~Lokavarapu}^{@}$, I.~Cherkashin, and E.~G.~Puckett (2014) 
+``A New Monotonicity-Preserving Numerical Method for Approximating Solutions to the Rayleigh-Benard Equations'', 
+\textit{Annual Geophysical Union Fall Meeting 2014}
+
+\hangindent 20pt
+$\mathrm{H.~Lokavarapu}^{@}$, H.~Matsui, and E.~M.~Heien (2014) 
+``Parallelization of the Legendre Transform for a Geodynamics Code'', 
+\textit{Annual Geophysical Union Fall Meeting 2014}
+
+  
+\clearpage
+
+\vskip 18pt
+
+$\phantom{0}^@$Undergraduate Student        \\
+$\phantom{0}^*$Graduate Student             \\
+$\phantom{0}^{\dagger}$Postdoctoral Scholar
+
+
+\end{document}
