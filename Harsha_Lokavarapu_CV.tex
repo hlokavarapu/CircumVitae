@@ -27,24 +27,7 @@
 %   Revision 1.00
 %
 %     Revision 1.00: Wednesday, July   04, 2018 08:49:51 PDT
-%     Revision 1.01: Friday,    July   06, 2018 12:06:23 PDT
-%     Revision 1.02: Friday,    July   13, 2018 10:16:26 PDT
-%     Revision 1.03: Monday,    July   16, 2018 12:48:14 MDT
-%     Revision 1.04: Tuesday,   July   17, 2018 12:08:31 MDT
-%     Revision 1.05: Tuesday,   July   24, 2018 13:58:42 PDT
-%     Revision 1.06: Wednesday, July   25, 2018 10:42:22 PDT
-%     Revision 1.07: Thursday,  July   26, 2018 16:20:51 PDT
-%     Revision 1.08: Saturday,  July   28, 2018 13:45:19 PDT
-%     Revision 1.09: Wednesday, August 01, 2018 17:09:54 PDT
-%     Revision 1.10: Thursday,  August 03, 2018 17:14:29 PDT
-%     Revision 1.11: Thursday,  August 09, 2018 14:28:34 PDT
-%     Revision 1.12: Friday,    August 10, 2018 14:28:34 PDT
-%     Revision 1.13: Saturday,  August 11, 2018 16:07:35 PDT
-%     Revision 1.13: Sunday,    August 12, 2018 13:21:15 PDT
-%     Revision 1.14: Monday,    August 13, 2018 11:40:24 PDT
-%     Revision 1.14: Tuesday,   August 14, 2018 16:00:24 PDT
-%     Revision 1.15: Wednesday, August 15, 2018 10:15:04 PDT
-%     Revision 1.16: Thursday,  August 16, 2018 10:53:07 PDT
+
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TURN OFF BibTeX? %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -242,6 +225,7 @@
   5221 Ferrera Ct                 \\
   Pleasanton, California 94588    \\
   lokavarapuh@gmail.com           \\  [3pt]
+  GitHub address??
 \end{center}
 
 %\href{https://orcid.org/0000-0002-6589-7395}{ORCID ID}
@@ -255,10 +239,10 @@
 \vskip -06pt
 
 \begin{tabular}{llll}
-University of California, Davis              &MS     &Geology       & 2017-- \\
-                                             &       &Thesis advisor Louise H. Kellogg &  \\
-University of California, Davis              &BS     &Computer Science  & 2010-2015       \\
-University of California, Davis              &Minor   &Applied Mathematics & 2010-2015
+University of California, Davis              &MS       &Computational Geodynamics (4.0 GPA)      & 2017-- \\
+                                             &       &Thesis Adviser Louise H. Kellogg           &  \\
+University of California, Davis              &BS      & Computer Science                         & 2015       \\
+                                             &Minor   & Applied Mathematics                      & 2015
 \end{tabular}
 
 \vskip 18pt
@@ -268,59 +252,58 @@ University of California, Davis              &Minor   &Applied Mathematics & 201
 \end{center}
 
 \begin{tabular}{lll}
-2014-2017     & Computational Infrastructure for Geodynamics (CIG) & Junior Assistant \\
+2014-2017     & \href{https://geodynamics.org/cig/}{Computational Infrastructure for Geodynamics} (CIG) & Junior Assistant Programmer \\
 2012       & Certify Data Systems (Humana) & Internship as Code Developer
 \end{tabular}
 
 \vskip 18pt
 
 \begin{center}
-	\textbf{\underline{Computing Skills and Experiences}}
+	\textbf{\underline{Programming Languages, Computing Skills, and Experience}}
 \end{center}
 
-\begin{enumerate}
-  \item \underline{Open-Source Code Development Contributions}
-    \begin{enumerate}
-      \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://aspect.geodynamics.org/}{ASPECT}) - C++
-      \item \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - Fortran
-      \item Generalized Reservoir Modeling (Ms. Thesis Project) - Python
-    \end{enumerate}
-  \item \underline{Parallel Processing/High Performance Computing (HPC)}
-    \begin{enumerate}
-      \item Distributed memory parallelism - (MPI) - C++/Fortran
-      \item Shared memory parallelism - (openMP)
-      \item CUDA - C++
-      \item Profilers - gdb, cuda-gdb
-      \item NSF Texas Advanced Computing Center:
-      \begin{enumerate}
-        \item \href{https://portal.xsede.org/tacc-stampede}{Stampede} and \href{https://portal.xsede.org/tacc-stampede2}{Stampede 2}
-        \item \href{https://portal.xsede.org/tacc-maverick}{Maverick} 
-      \end{enumerate}
-      \item Math and Physical Science (MPS) HPC Cluster
-      \begin{enumerate}
-        \item Ymir
-        \item Peloton
-      \end{enumerate}
-      \item SLURM - HPC scheduler
-      \item Executed strong and weak scaling tests for
-      \begin{enumerate}
-              \item ASPECT - As part of work associated with DSF paper (not included with published version)
-        \item Calypso - published as poster at Fall AGU 2014
-      \end{enumerate}
-    \end{enumerate}
-  \item \underline{Continuous Integration Tools:}
-    \begin{enumerate}
-      \item Jenkins - Java
-      \item Travis
-    \end{enumerate}
-  \item \underline{Outside Interests:}
-    \begin{enumerate}
-      \item Virtual Reality - (A-frame) - JavaScript
-      \item 3-D Design/Printing - (Tinkercad)
-      \item Neural Networks - (Kereas, Tensorflow) - Python
-    \end{enumerate}
-\end{enumerate}
-
+\begin{description}
+  \item[] \underline{Open-Source Code Development Contributions}
+    \begin{description}
+      \item[] Advanced Solver for Problems in Earth's ConvecTion (\href{https://aspect.geodynamics.org/}{ASPECT}) - C++
+      \item[] \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - Fortran
+      \item[] Generalized Reservoir Modeling (Ms. Thesis Project) - Python
+    \end{description}
+  \item[] \underline{Parallel Processing/High Performance Computing (HPC)}
+    \begin{description}
+      \item[] Distributed memory parallelism - (MPI) - C++/Fortran
+      \item[] Shared memory parallelism - (openMP)
+      \item[] CUDA - C++
+      \item[] Profilers - gdb, cuda-gdb
+      \item[] NSF Texas Advanced Computing Center:
+      \begin{description}
+        \item[] \href{https://portal.xsede.org/tacc-stampede}{Stampede} and \href{https://portal.xsede.org/tacc-stampede2}{Stampede 2}
+        \item[] \href{https://portal.xsede.org/tacc-maverick}{Maverick} 
+      \end{description}
+      \item[] Math and Physical Science (MPS) HPC Cluster
+      \begin{description}
+        \item[] Ymir
+        \item[] Peloton
+      \end{description}
+      \item[] SLURM - HPC scheduler
+      \item[] Executed strong and weak scaling tests for
+      \begin{description}
+        \item[] ASPECT - As part of work associated with DSF paper (not included with published version)
+        \item[] Calypso - published as poster at Fall AGU 2014
+      \end{description}
+    \end{description}
+  \item[] \underline{Continuous Integration Tools:}
+    \begin{description}
+      \item[] Jenkins - Java
+      \item[] Travis
+    \end{description}
+  \item[] \underline{Outside Interests:}
+    \begin{description}
+      \item[] Virtual Reality - (A-frame) - JavaScript
+      \item[] 3-D Design/Printing - (Tinkercad)
+      \item[] Neural Networks - (Kereas, Tensorflow) - Python
+    \end{description}
+\end{description}
 
 \vskip 12pt
 
