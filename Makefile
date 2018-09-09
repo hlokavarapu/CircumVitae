@@ -1,4 +1,4 @@
-document = EGPS_HVL_CV
+document = Harsha_Lokavarapu_CV
 all:
 	pdflatex  --shell-escape $(document).tex
 	pdflatex  --shell-escape $(document).tex
