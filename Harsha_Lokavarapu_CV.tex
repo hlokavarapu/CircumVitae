@@ -269,14 +269,12 @@ University of California, Davis              &BS      & Computer Science        
     
       \begin{itemize}
       	
-        \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) - A parallel, extensible finite element code to simulate convection in both 2D and 3D models written in C++. \textcolor{red}{There is more. Parameter parsing?}
+        \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) - A parallel, extensible finite element code to simulate convection in both 2D and 3D models written in C++.
       
       \item State of-the-art model of the Earth's Geodynamo,
-      \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - FORTRAN and CUDA
-      \textcolor{red}{Is the correct language for the GPU code?}
-      \textcolor{green}{That's right, CUDA is a C++ library designed for Nvidia GPUs}
+      \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - FORTRAN
       
-      \item Generalized Reservoir Modeling (\href{https://github.com/hlokavarapu/resecore.git}{MS Thesis Project}) - Python
+      \item Generalized reservoir modeling library (MS Thesis Project: \href{https://github.com/hlokavarapu/resecore.git}{Resecore}) - Python
             
     \end{itemize}
                                             
@@ -291,15 +289,17 @@ University of California, Davis              &BS      & Computer Science        
         \vskip 06pt   
         
         \begin{itemize} 
+        
+          \item CMake, CTest - Build tools - (Git PR: \href{https://github.com/hlokavarapu/computational_tools/tree/master/ASPECT_build_scripts}{1}, \href{https://github.com/geodynamics/calypso/pull/4}{2})
       
-          \item SLURM HPC scheduler
+          \item CUDA - (Git PR: \href{https://github.com/geodynamics/calypso/pull/3}{1})
                    
           \item Distributed memory parallelism - MPI for C++ and FORTRAN
       
           \item Shared memory parallelism - openMP
-      
-          \item CUDA - C++
-      
+          
+          \item SLURM HPC scheduler
+          
           \item Profilers: gdb and cuda-gdb
       
       \end{itemize}
@@ -343,15 +343,19 @@ University of California, Davis              &BS      & Computer Science        
               
           \begin{itemize}        
             
-            \item Design and implement parallel particle generation algorithms
+            \item Design and implement parallel particle generation algorithms. (Git: \href{https://github.com/geodynamics/aspect/pull/1266}{PR})
            
-            \item Design and implement parallel particle interpolation algorithms including harmonic averaging and bilinear least squares
+            \item Design and implement parallel particle interpolation algorithms including harmonic averaging and bilinear least squares. (Git PR: \href{https://github.com/geodynamics/aspect/pull/1949}{Harmonic Average}, \href{https://github.com/geodynamics/aspect/pull/1554}{Bilinear least squares})
            
-            \item Design 2D benchmarks to test the accuracy of particle algorithms in a finite element code
+            \item Design 2-D analytical solution to Stokes equations in order to benchmark the accuracy of particle algorithms in ASPECT. (Git: \href{https://github.com/EGP-CIG-REU/aspect/tree/EGP_HVL_benchmark/benchmark/egp_hvl}{1}, \href{https://github.com/EGP-CIG-REU/aspect/tree/simple_annulus_benchmark/benchmarks/simple_annulus}{2})
            
-            \item Implement Schmeling subducting slab benchmark from Schmeling et al., Physics of the Earth and Planetary Interiors 171 (2008) 198--223
+            \item Refactor existing benchmarks using C++ inheritance principles to reduce repetitive code. (Git PR: \href{https://github.com/geodynamics/aspect/pull/1498}{SolCx}, \href{https://github.com/geodynamics/aspect/pull/1539}{SolKz}, \href{https://github.com/geodynamics/aspect/pull/1345}{Compositional Fields})
+            
+            \item Implement Schmeling subducting slab benchmark from Schmeling et al., Physics of the Earth and Planetary Interiors 171 (2008) 198--223 
             
             \item Execute strong and weak scaling tests for original draft of publication [3] (see below), which was not included in the final publication              
+            
+            \item ASPECT Git contributions \href{https://github.com/geodynamics/aspect/commits?author=hlokavarapu}{timeline}
 
            \end{itemize}
 
@@ -361,12 +365,13 @@ University of California, Davis              &BS      & Computer Science        
           	
           	\item Optimization of Legendre Polynomial transform in spherical geometry using CUDA for Nvidia GPUs 
           	
-          	\item Designed different implementations using CUDA Fast Fourier Transform (\href{https://docs.nvidia.com/cuda/cufft/index.html}{cuFFT}) library, CUDA Basic Linear Algebra Subprograms (\href{https://docs.nvidia.com/cuda/cublas/index.html}{cuBLAS}), and \href{https://nvlabs.github.io/cub/}{CUB} library
+          	\item Designed different implementations using CUDA Fast Fourier Transform (\href{https://docs.nvidia.com/cuda/cufft/index.html}{cuFFT}) library, CUDA Basic Linear Algebra Subprograms (\href{https://docs.nvidia.com/cuda/cublas/index.html}{cuBLAS}), and \href{https://nvlabs.github.io/cub/}{CUB} library. (Git: \href{https://github.com/geodynamics/calypso/pull/3}{PR}, \href{https://github.com/hlokavarapu/calypso/tree/concurrency/src/Cuda_libraries}{Dev branch})
           	
           	\item Profile and test optimizations using strong and weak scaling tests
           	
           	\item Published results as poster [4], [6] (see below) at the 2014, 2015 Annual Fall AGU Meetings
           	
+          	\item Calypso Git contributions \href{https://github.com/geodynamics/calypso/commits/Legendre_transform_w_symmetry}{timeline}
           \end{itemize}
            
 
@@ -378,14 +383,16 @@ University of California, Davis              &BS      & Computer Science        
     \item[] \textbf{\underline{Data Analysis and Visualization}}
     
       \begin{itemize}
+      
+        \item Bash scripting - running numerous jobs, job monitoring, and data collection (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/slurm_scripts}{Code})
       	    	
-        \item R
+      	\item Gnuplot 
+      	
+        \item Paraview GUI and Scripting - (Git: \href{https://github.com/hlokavarapu/computational_tools/blob/master/Paraview_scripts/Find_timestep_given_nondim_time_2_comp.py}{Code})
+        
+        \item Jupyter Notebooks and Python - (Git: \href{https://github.com/hlokavarapu/Prospectus/blob/master/SlideDeck/MeetingPresentation.ipynb}{Deep Carbon}, \href{https://github.com/EGP-CIG-REU/SECOND_PARTICLE_PAPER/blob/master/00JUPYTER_NOTEBOOKS/egp_time_dependent_annulus_v-02/egp_time_dependent_annulus_v-02-Exact.ipynb}{Convergence Analysis}, and \href{https://github.com/hlokavarapu/Geology_Journal/tree/master/00JUPYTER}{more})
        
-        \item Python Libraries - matplotlib, numpy, scipy, and pandas
-        
-        \item Gnuplot
-        
-        \item Paraview 
+        \item R
         
         \item Visit
         
@@ -401,17 +408,18 @@ University of California, Davis              &BS      & Computer Science        
     \item[] \textbf{\underline{Outside Interests}}
     
       \begin{itemize}
-        \item Virtual Reality - (\href{https://aframe.io/}{A-frame}) - JavaScript
-        \item  3-D Design/Printing - (\href{https://www.tinkercad.com/#/}{Tinkercad})
+        \item Virtual Reality - (Git: \href{https://github.com/hlokavarapu/VR-Experiments}{VR-Experiments} using A-Frame library) - JavaScript
+        \item  3-D Design/Printing - Tinkercad
       
-        \item  Machine Learning - (\href{https://keras.io}{Keras}, \href{https://www.tensorflow.org/guide/premade_estimators}{Tensorflow}) - Python
+        \item  Machine Learning - (Keras Examples, Tensorflow Iris Classification Tutorial) - Python
         
-        \item \href{https://github.com/jcjohnson/neural-style}{Neural style}
+        \item \href{https://github.com/jcjohnson/neural-style}{Neural style} - Lua
       
       \end{itemize}
 
   \end{description}
 
+\newpage
 
 \vskip 12pt
 
@@ -427,6 +435,7 @@ University of California, Davis              &BS      & Computer Science        
   May 6-17, 2017 & Participant & \href{https://geodynamics.org/cig/events/calendar/2017-aspect-hack/}{ASPECT Hackathon} \\[06pt]
   2014-2016     & Member & 
  \href{ https://sites.agu.org}{ American Geophysical Union } \\[06pt]
+  June 14-September 20, 2016 & Assistant Mentor & Research Experience for Undergraduates Program \\[06pt]
   June 24-July 2, 2016     & Participant & CIG - \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/}{All Hands Meeting} \\[06pt]
   2015     & Participant & \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/2016-aspect-hack/?eID=1233}{ASPECT Hackathon}\\[06pt]
   
@@ -448,7 +457,7 @@ University of California, Davis              &BS      & Computer Science        
 \underline{Submitted}
 
 \hangindent 20pt
-[1]~L.~H.~Kellogg, D. L.~Turcotte, M.~Weisfeiler, $\textrm{H.~Lokavarapu}^@$, S.~Mukhopadhyay, (2018) 
+[1]~L.~H.~Kellogg, D. L.~Turcotte, M.~Weisfeiler, $\textrm{H.~Lokavarapu}^*$, S.~Mukhopadhyay, (2018) 
 ``Implications of a Reservoir Model for the
 Evolution of Deep Carbon'', 
 \textit{Earth and Planetary Science Letters}, Ms. Ref. No.:  EPSL-D-17-01055
@@ -457,7 +466,7 @@ Evolution of Deep Carbon'',
 \underline{Accepted}
 
 \hangindent 20pt
-[2]~R.~Gassmoeller,  $\textrm{H.~Lokavarapu}^@$, E.~Heien, E. G.~Puckett, and W.~Bangerth, (2018) 
+[2]~R.~Gassmoeller,  $\textrm{H.~Lokavarapu}^*$, E.~Heien, E. G.~Puckett, and W.~Bangerth, (2018) 
 ``Flexible and scalable particle-in-cell methods with adaptive mesh refinement for geodynamic computations'', 
 \textit{Geochemistry, Geophysics, Geosystems} manuscript 2018GC007508R 
 \href{https://www.math.ucdavis.edu/~egp/PUBLICATIONS/JOURNAL_ARTICLES/ACCEPTED/RG-HL-EH-EGP-WB-2018.pdf}{View Accepted Manuscript}
@@ -480,7 +489,7 @@ Special issue of . \textit{Physics of the Earth and Planetary Interiors} associa
 % \vskip 12pt
 
 \hangindent 20pt
-[1]~L.~H.~Kellogg, $\mathrm{H.~Lokavarapu}^{@}$, D. L.~Turcotte, and S.~Mukhopadhyay (2017) 
+[1]~L.~H.~Kellogg, $\mathrm{H.~Lokavarapu}^{*}$, D. L.~Turcotte, and S.~Mukhopadhyay (2017) 
 ``A reservoir model study of the flux of carbon from the atmosphere, to the continental crust, to the mantle'', 
 \textit{Annual Geophysical Union Fall Meeting 2017}
 \href{http://adsabs.harvard.edu/abs/2017AGUFMDI14A..06K}{View Abstract}
@@ -521,8 +530,6 @@ $\phantom{0}^@$Undergraduate Student        \\
 $\phantom{0}^*$Graduate Student             \\
 $\phantom{0}^{\dagger}$Postdoctoral Scholar
 
-\newpage
-
 \begin{center}
   \textbf{\underline{CLASSES}}
 \end{center}
@@ -548,8 +555,5 @@ $\phantom{0}^{\dagger}$Postdoctoral Scholar
   \tabitem 170 - Artificial Intelligence & 	\tabitem 228A - Computational methods for Partial Differential \\
   \tabitem 188 - Ethics in an Age of Technology & \qquad\qquad Equations
 \end{tabular}
-
-
-
 
 \end{document}
