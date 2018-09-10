@@ -262,77 +262,148 @@ University of California, Davis              &BS      & Computer Science        
 	\textbf{\underline{Programming Languages, Computing Skills, and Experience}}
 \end{center}
 
-\begin{description}
-  \item[] \underline{Open-Source Code Development Contributions}
-    \begin{description}
-      \item[] Advanced Solver for Problems in Earth's ConvecTion (\href{https://aspect.geodynamics.org/}{ASPECT}) - C++
-      \item[] \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - Fortran
-      \item[] Generalized Reservoir Modeling (Ms. Thesis Project) - Python
-    \end{description}
-  \item[] \underline{Parallel Processing/High Performance Computing (HPC)}
-    \begin{description}
-      \item[] Distributed memory parallelism - (MPI) - C++/Fortran
-      \item[] Shared memory parallelism - (openMP)
-      \item[] CUDA - C++
-      \item[] Profilers - gdb, cuda-gdb
-      \item[] NSF Texas Advanced Computing Center:
+  \begin{description}
+  	
+    \item[] \textbf{\underline{Open Source Code Development}}
+    
+      \begin{itemize}
+      	
+        \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) - C++ \textcolor{red}{There is more. Parameter parsing?}
+      
+      \item State of-the-art model of the Earth's Geodynamo
+      \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - Fortran
+      \textcolor{red}{Where is the GPU?}
+      
+      \item Generalized Reservoir Modeling (MS Thesis Project) - Python
+            \textcolor{red}{This is a Carbon Reservoir in the Earth's Deep Interior, and perhaps elswhere is it not?}
+            
+    \end{itemize}
+      
+                                               % I like a space on either side of /
+
+    \item[] \textbf{\underline{Parallel Processing / High Performance Computing (HPC) Experience}}
+
+          
+      \vskip 06pt
+      
       \begin{description}
+    
+    	\item[] \textbf{Tools}
+     
+        \vskip 06pt   
+        
+        \begin{itemize} 
+      
+          \item SLURM - HPC scheduler
+                   
+          \item Distributed memory parallelism - MPI for C++ and FORTRAN
+      
+          \item Shared memory parallelism - openMP
+      
+          \item CUDA - C++
+      
+          \item Profilers: gdb and cuda-gdb
+      
+      \end{itemize}
+      
+    \item[] \textbf{Machines}
+    
+\vskip 06pt    	 
+      \item National Science Foundation (NSF) Texas Advanced Computing Center
+      
+      \begin{itemize}
         \item[] \href{https://portal.xsede.org/tacc-stampede}{Stampede} and \href{https://portal.xsede.org/tacc-stampede2}{Stampede 2}
         \item[] \href{https://portal.xsede.org/tacc-maverick}{Maverick} 
-      \end{description}
-      \item[] Math and Physical Science (MPS) HPC Cluster
-      \begin{description}
-        \item[] Ymir
-        \item[] Peloton
-      \end{description}
-      \item[] SLURM - HPC scheduler
-      \item[] Executed strong and weak scaling tests for
-      \begin{description}
-        \item[] ASPECT - As part of work associated with DSF paper (not included with published version)
-        \item[] Calypso - published as poster at Fall AGU 2014
-      \end{description}
+      \end{itemize}
+  
+      \item UCD Math and Physical Sciences (MPS) HPC Cluster
+      
+      \begin{itemize}
+      	
+        \item Ymir    \textcolor{red}{Details, briefly ...}
+        \item Peloton  \textcolor{red}{Details, briefly ...}
+      \end{itemize}
+  
+
+    \item[] \textbf{Computations}
+    
+      \vskip 06pt
+      
+
+      \begin{itemize}
+      	
+        \item \href{https://geodynamics.org/cig/software/aspect/}{ASPECT}
+              
+          \begin{itemize}        
+              
+            \item Executed strong and weak scaling tests for original draft of publication [1] (see below), which was not included in the final publication              
+
+           \end{itemize}
+
+        \item       \href{https://geodynamics.org/cig/software/calypso/}{Calypso}         
+
+          \begin{itemize}
+          	
+          	\item Wrote GPU code to speed up Legendre Polynomial computations in spherical geometry
+          	
+          	\item Published as poster at 2014 Annual Fall AGU Meeting
+          	
+          \end{itemize}
+           
+
+      \end{itemize}
+
+    
     \end{description}
-  \item[] \underline{Continuous Integration Tools:}
-    \begin{description}
-      \item[] Jenkins - Java
-      \item[] Travis
-    \end{description}
-  \item[] \underline{Outside Interests:}
-    \begin{description}
-      \item[] Virtual Reality - (A-frame) - JavaScript
-      \item[] 3-D Design/Printing - (Tinkercad)
-      \item[] Neural Networks - (Kereas, Tensorflow) - Python
-    \end{description}
-\end{description}
+
+    \item[] \textbf{\underline{Continuous Integration Tools}}
+  
+    \begin{itemize}
+      \item Jenkins - Java
+      \item Travis
+    \end{itemize}
+    
+    \item[] \textbf{\underline{Outside Interests}}
+    
+      \begin{itemize}
+        \item Virtual Reality - (A-frame) - JavaScript
+        \item  3-D Design/Printing - (Tinkercad)
+      
+        \item  Neural Networks - (Kereas, Tensorflow) - Python
+      
+      \end{itemize}
+
+  \end{description}
+
 
 \vskip 12pt
 
 \begin{center}
-	\textbf{\underline{Professional Activities}}
+	\textbf{\underline{Professional Affiliations and Activities}}
 \end{center}
 
 \vskip -06pt
 
 \addtolength{\tabcolsep}{15pt}   
 \begin{tabular}{lll}
-  2017--     & Member & ~\href{https://deepcarbon.net/}{Deep Carbon Observatory} \\
-  2016     & Participant & \href{https://geodynamics.org/cig/events/calendar/2017-aspect-hack/}{ASPECT Hackathon} \\
-  2016     & Participant & CIG - \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/}{All Hands Meeting} \\
-  2015     & Participant & \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/2016-aspect-hack/?eID=1233}{ASPECT Hackathon}\\
-  2014-2016     & Member & Annual Geophysical Union 
+  2017--     & Member & ~\href{https://deepcarbon.net/}{Deep Carbon Observatory} \\[06pt]
+  2014-2016     & Member & 
+ \href{ https://sites.agu.org}{ American Geophysical Union } \\[06pt]
+  2016 \textcolor{red}{dates!!!} & Participant & \href{https://geodynamics.org/cig/events/calendar/2017-aspect-hack/}{ASPECT Hackathon} \\[06pt]
+  2016     & Participant & CIG - \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/}{All Hands Meeting} \\[06pt]
+  2015     & Participant & \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/2016-aspect-hack/?eID=1233}{ASPECT Hackathon}\\[06pt]
+  
+
 \end{tabular}
 \addtolength{\tabcolsep}{1pt}  
- 
-\clearpage
 
-\newpage
 
 \begin{center}
-  \textbf{\underline{Publications}}
+  \textbf{\underline{PUBLICATIONS}}
 \end{center}
 
 \noindent
-\textbf{\underline{Refereed Journal Publications}}
+\textbf{\underline{REFEREED JOURNAL PUBLICATIONS}}
 
 %\vskip 12pt
 
@@ -373,7 +444,7 @@ Special issue of . \textit{Physics of the Earth and Planetary Interiors} associa
 \href{https://www.math.ucdavis.edu/~egp/PUBLICATIONS/JOURNAL_ARTICLES/APPEARED/2018/EGP-DLT-YH-HL-JMR-LHK-2018.pdf}{View Article}
 
 \noindent
-\textbf{\underline{Poster Presentations}}
+\textbf{\underline{POSTER PRESENTATIONS}}
 
 % \vskip 12pt
 
@@ -419,34 +490,11 @@ $\phantom{0}^@$Undergraduate Student        \\
 $\phantom{0}^*$Graduate Student             \\
 $\phantom{0}^{\dagger}$Postdoctoral Scholar
 
-
-\clearpage
-
-
-\newpage
-
 \begin{center}
-  \textbf{\underline{Educational Details:}}
+  \textbf{\underline{EDUCATION}}
 \end{center}
 
-\noindent
-\textbf{\underline{Math Courses}}
-\begin{itemize} 
-  \item 21B - Differential Calculus
-  \item 21C - Integral Calculus
-  \item 21D - Vector Analysis
-  \item 22A - Linear Algebra
-  \item 22B - Differential Equations
-  \item 118A - Partial Differential Equations
-  \item 118B
-  \item 125A - Real Analysis (Foundations of Calculus)
-  \item 125B
-  \item 135A - Probability
-  \item 150A - Modern Algebra
-  \item 150B
-  \item 167 - Advanced Linear Algebra: Matrix Methods in Data mining and Pattern Recognition
-  \item 228A - Computational methods for Differential Equations
-\end{itemize}
+\textcolor{red}{Can you make this page two columns?}
 
 \noindent
 \textbf{\underline{Computer Science Courses}}
@@ -469,4 +517,23 @@ $\phantom{0}^{\dagger}$Postdoctoral Scholar
   \item 188 - Ethics in an Age of Technology
 \end{itemize}
 
+
+\noindent
+\textbf{\underline{Mathematics}}
+\begin{itemize} 
+	\item 21B - Differential Calculus
+	\item 21C - Integral Calculus
+	\item 21D - Vector Analysis
+	\item 22A - Linear Algebra
+	\item 22B - Ordinary Differential Equations
+	\item 118A - Partial Differential Equations   (first quarter)
+	\item 118B - Partial Differential Equations   (second quarter)
+	\item 125A - Real Analysis (Foundations of Calculus)
+	\item 125B - Real Analysis (second quarter)
+	\item 135A - Probability
+	\item 150A - Modern Algebra (first quarter)
+	\item 150B - Modern Algebra (second quarter)
+	\item 167  - Advanced Linear Algebra: Machine Learning
+	\item 228A - Computational methods for Partial Differential Equations
+\end{itemize}
 \end{document}
