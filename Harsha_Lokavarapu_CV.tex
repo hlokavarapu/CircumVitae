@@ -142,7 +142,7 @@
 
 \usepackage{extarrows} % (extensible arrows)
 
-
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SET UP THE "VERSION" PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -268,14 +268,14 @@ University of California, Davis              &BS      & Computer Science        
     
       \begin{itemize}
       	
-        \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) - C++ \textcolor{red}{There is more. Parameter parsing?}
+        \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) - A parallel, extensible finite element code to simulate convection in both 2D and 3D models written in C++. \textcolor{red}{There is more. Parameter parsing?}
       
-      \item State of-the-art model of the Earth's Geodynamo
-      \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - FORTRAN and Cuda
+      \item State of-the-art model of the Earth's Geodynamo,
+      \href{https://geodynamics.org/cig/software/calypso/}{Calypso} - FORTRAN and CUDA
       \textcolor{red}{Is the correct language for the GPU code?}
+      \textcolor{green}{That's right, CUDA is a C++ library designed for Nvidia GPUs}
       
-      \item Generalized Reservoir Modeling (MS Thesis Project) - Python
-            \textcolor{red}{This is a Carbon Reservoir in the Earth's Deep Interior? POINT TO YOUR GITHUB REPO}
+      \item Generalized Reservoir Modeling (\href{https://github.com/hlokavarapu/resecore.git}{MS Thesis Project}) - Python
             
     \end{itemize}
                                             
@@ -323,9 +323,9 @@ University of California, Davis              &BS      & Computer Science        
       
         \begin{itemize}
       	
-          \item Ymir    \textcolor{red}{Details, briefly ...}
+          \item \href{https://wiki.cse.ucdavis.edu/support/systems/ymir}{Ymir} - 38 Dual socket, quad core (Intel E5620 2.4 GHz CPUs) with 24 GB RAM.
         
-          \item Peloton  \textcolor{red}{Details, briefly ...}
+          \item \href{https://wiki.cse.ucdavis.edu/support/systems/peloton}{Peloton} - 55 nodes with 64GB ram, 16 cores/32 threads (Intel Xeon E5-2630v3 Processors).
         
         \end{itemize}
   
@@ -341,8 +341,14 @@ University of California, Davis              &BS      & Computer Science        
         \item \href{https://geodynamics.org/cig/software/aspect/}{ASPECT}
               
           \begin{itemize}        
-              
-            \item Executed strong and weak scaling tests for original draft of publication [3] (see below), which was not included in the final publication              
+            
+            \item Design and implement parallel particle generation algorithms
+           
+            \item Design and implement parallel particle interpolation algorithms including harmonic averaging and bilinear least squares
+           
+            \item Design 2D benchmarks to test the accuracy of particle algorithms in a finite element code
+           
+            \item Execute strong and weak scaling tests for original draft of publication [3] (see below), which was not included in the final publication              
 
            \end{itemize}
 
@@ -350,9 +356,13 @@ University of California, Davis              &BS      & Computer Science        
 
           \begin{itemize}
           	
-          	\item Wrote GPU code to speed up Legendre Polynomial computations in spherical geometry
+          	\item Optimization of Legendre Polynomial transform in spherical geometry using CUDA for Nvidia GPUs 
           	
-          	\item Published as poster [6] (see below) at the 2014 Annual Fall AGU Meeting
+          	\item Designed different implementations using CUDA Fast Fourier Transform (\href{https://docs.nvidia.com/cuda/cufft/index.html}{cuFFT}) library, CUDA Basic Linear Algebra Subprograms (\href{https://docs.nvidia.com/cuda/cublas/index.html}{cuBLAS}), and \href{https://nvlabs.github.io/cub/}{CUB} library
+          	
+          	\item Profile and test optimizations using strong and weak scaling tests
+          	
+          	\item Published results as poster [4], [6] (see below) at the 2014, 2015 Annual Fall AGU Meetings
           	
           \end{itemize}
            
@@ -366,32 +376,34 @@ University of California, Davis              &BS      & Computer Science        
     
       \begin{itemize}
       	    	
-        \item R, python tools,
+        \item R
        
-        \item python tools
+        \item Python Libraries - matplotlib, numpy, scipy, and pandas
         
-        \item  gnuplot
+        \item Gnuplot
         
-        \item paraview 
+        \item Paraview 
         
-        \item \textcolor{red}{Anything else?}
+        \item Visit
         
         
       \end{itemize}
-    \item[] \textbf{\underline{Continuous Integration Tools}}
+%    \item[] \textbf{\underline{Continuous Integration Tools}}
   
-    \begin{itemize}
-      \item Jenkins - Java
-      \item Travis
-    \end{itemize}
+%    \begin{itemize}
+%      \item Jenkins - Java
+%      \item Travis
+%    \end{itemize}
     
     \item[] \textbf{\underline{Outside Interests}}
     
       \begin{itemize}
-        \item Virtual Reality - (A-frame) - JavaScript
-        \item  3-D Design/Printing - (Tinkercad)
+        \item Virtual Reality - (\href{https://aframe.io/}{A-frame}) - JavaScript
+        \item  3-D Design/Printing - (\href{https://www.tinkercad.com/#/}{Tinkercad})
       
-        \item  Neural Networks - (Kereas, Tensorflow) - Python
+        \item  Machine Learning - (\href{https://keras.io}{Keras}, \href{https://www.tensorflow.org/guide/premade_estimators}{Tensorflow}) - Python
+        
+        \item \href{https://github.com/jcjohnson/neural-style}{Neural style}
       
       \end{itemize}
 
@@ -409,10 +421,10 @@ University of California, Davis              &BS      & Computer Science        
 \addtolength{\tabcolsep}{15pt}   
 \begin{tabular}{lll}
   2017--     & Member & ~\href{https://deepcarbon.net/}{Deep Carbon Observatory} \\[06pt]
+  May 6-17, 2017 & Participant & \href{https://geodynamics.org/cig/events/calendar/2017-aspect-hack/}{ASPECT Hackathon} \\[06pt]
   2014-2016     & Member & 
  \href{ https://sites.agu.org}{ American Geophysical Union } \\[06pt]
-  2016 \textcolor{red}{dates!!!} & Participant & \href{https://geodynamics.org/cig/events/calendar/2017-aspect-hack/}{ASPECT Hackathon} \\[06pt]
-  2016     & Participant & CIG - \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/}{All Hands Meeting} \\[06pt]
+  June 24-July 2, 2016     & Participant & CIG - \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/}{All Hands Meeting} \\[06pt]
   2015     & Participant & \href{https://geodynamics.org/cig/events/calendar/2016-cig-all-hands-meeting/2016-aspect-hack/?eID=1233}{ASPECT Hackathon}\\[06pt]
   
 
@@ -514,47 +526,29 @@ $\phantom{0}^{\dagger}$Postdoctoral Scholar
   \textbf{\underline{CLASSES}}
 \end{center}
 
-\textcolor{red}{Can you make this into two columns?}
+\vskip -6pt
 
-\noindent
-\textbf{\underline{Computer Science Courses}}
-\begin{itemize}
-  \item 10 - Concepts of Computing
-  \item 20 - Discrete Mathematics for Computer Science
-  \item 30 - Introduction to Programming and Problem Solving
-  \item 40 - Software and Object-Oriented Programming
-  \item 50 - Machine Dependent Programming
-  \item 60 - Data Structures and Programming
-  \item 120 - Theory of Computation
-  \item 122A - Algorithm Design
-  \item 140A - Programming Languages
-  \item 150 - Operating Systems
-  \item 152A - Computer Networks
-  \item 153 - Computer Security
-  \item 154A - Computer Architecture
-  \item 158 - Parallel Architectures
-  \item 170 - Artificial Intelligence
-  \item 188 - Ethics in an Age of Technology
-\end{itemize}
+\begin{tabular}{lll}
+  \textbf{\underline{Computer Science Courses}} & \textbf{\underline{Mathematics}} \\
+  \tabitem 10 - Concepts of Computing & \tabitem 21A - Differential Calculus \\
+  \tabitem 20 - Discrete Mathematics for Computer Science & 	\tabitem 21B - Integral Calculus \\
+  \tabitem 30 - Introduction to Programming and Problem Solving & 	\tabitem 21C - Expansions, Series, etc. \\
+  \tabitem 40 - Software and Object-Oriented Programming & 	\tabitem 21D - Vector Analysis \\
+  \tabitem 50 - Machine Dependent Programming & 	\tabitem 22A - Linear Algebra \\
+  \tabitem 60 - Data Structures and Programming & 	\tabitem 22B - Ordinary Differential Equations \\
+  \tabitem 120 - Theory of Computation & 	\tabitem 118A - Partial Differential Equations   (first quarter) \\
+  \tabitem 122A - Algorithm Design & 	\tabitem 118B - Partial Differential Equations   (second quarter) \\
+  \tabitem 140A - Programming Languages & 	\tabitem 125A - Real Analysis (Foundations of Calculus) \\
+  \tabitem 150 - Operating Systems & 	\tabitem 125B - Real Analysis (second quarter) \\
+  \tabitem 152A - Computer Networks & 	\tabitem 135A - Probability \\
+  \tabitem 153 - Computer Security & 	\tabitem 150A - Modern Algebra (first quarter) \\
+  \tabitem 154A - Computer Architecture & 	\tabitem 150B - Modern Algebra (second quarter) \\
+  \tabitem 158 - Parallel Architectures & 	\tabitem 167  - Advanced Linear Algebra: Machine Learning \\
+  \tabitem 170 - Artificial Intelligence & 	\tabitem 228A - Computational methods for Partial Differential \\
+  \tabitem 188 - Ethics in an Age of Technology & \qquad\qquad Equations
+\end{tabular}
 
 
-\noindent
-\textbf{\underline{Mathematics}}
-\begin{itemize} 
-	\item 21A - Differential Calculus
-	\item 21B - Integral Calculus
-	\item 21C - Expansions, Series, etc.
-	\item 21D - Vector Analysis
-	\item 22A - Linear Algebra
-	\item 22B - Ordinary Differential Equations
-	\item 118A - Partial Differential Equations   (first quarter)
-	\item 118B - Partial Differential Equations   (second quarter)
-	\item 125A - Real Analysis (Foundations of Calculus)
-	\item 125B - Real Analysis (second quarter)
-	\item 135A - Probability
-	\item 150A - Modern Algebra (first quarter)
-	\item 150B - Modern Algebra (second quarter)
-	\item 167  - Advanced Linear Algebra: Machine Learning
-	\item 228A - Computational methods for Partial Differential Equations (Graduate Class)
-\end{itemize}
+
+
 \end{document}
