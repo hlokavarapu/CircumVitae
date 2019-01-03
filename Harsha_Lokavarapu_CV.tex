@@ -1,114 +1,37 @@
-%        10        20        30        40        50        60       70        80        90
-%23456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456
-
-% \documentclass[11pt]{article} %\documentclass[final,10pt,reqno, oneside,dvipsnames]{article}
-
-% WARNING: Use of 'twoside' will cause \marginpar to flip from right to left margin, depending
-% on the page.
-
 \documentclass[11pt]{ltxdoc}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Template provided by PROFESSOR ELBRIDGE GERRY PUCKETT
-%%%%%%%%%%%%%%%%%%% Harsha Lokavarapu CURRICULUM VITAE %%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-% PROFESSOR ELBRIDGE GERRY PUCKETT
-% DEPARTMENT OF MATHEMATICS
-% UNIVERSITY OF CALIFORNIA, DAVIS
-%
-% Original LaTeX file created by
-%
-%   Wednesday, July 04, 2018 08:49:51 PDT
-%
-%
-% REVISION HISTORY:
-%
-%   Revision 1.00
-%
-%     Revision 1.00: Wednesday, July   04, 2018 08:49:51 PDT
-
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TURN OFF BibTeX? %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% If there is no need for BibTeX in this document turn it off, since it creates unwanted 
-% files.
-
 \let\nobibtex = t
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SET UP PAGE PARAMETERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% EGP's preferred page style for notes, homework assignments, exams, etc.
-
-% Margins, paragraph indents, space between paragraphs if any, etc. Good references 
-% include page 85 of "The LaTeX Companion" by Frank Mittelbach and Michel Goossens and 
-% page 260 of "Math Into LaTeX" by George Gratzer.
-
-% Enlarge the width and height of the printed page
 
 \setlength{\textwidth }{7.50 in}
 \setlength{\textheight}{9.50 in} % \textheight     = 9.25 in
 
-% Space between the end of the odd and even side margins and the beginning of the text.
-
 \setlength{\oddsidemargin }{0.0 in}
 \setlength{\evensidemargin}{0.0 in}
 
-% The side margins are 1.0 inch plus \hoffset and the top margins is 1.0 inch plus 
-% \voffset. According to "The LaTeX Companion" the default values are \hoffset = 00 pt 
-% and \voffset = 00 pt.
 
 \setlength{\hoffset}{-0.50 in}
 \setlength{\voffset}{-0.50 in}
 
-% If there is no header in this document, set each of the following values to zero.
-
-% This is the amount of space between the BOTTOM of the HEAD and the TOP of the BODY. 
-% According to "Math Into LaTeX"  by George Gratzer the default values for LaTeX's 
-% article document is \headsep = 25 pt.
 
 \setlength{\headsep}{12 pt}
 
-% Package Fancyhdr Warning: \headheight = 12 pt is too small. Make it at least 14.0pt. 
-% According to "Math Into LaTeX"  by George Gratzer the default value for LaTeX's article 
-% document is \headheight = 12 pt.
 
 \setlength{\headheight}{14 pt}
 
-% This is the amount of space between the top of the page and the TOP of the header. According to "Math
-% Into LaTeX"  by George Gratzer the default value for LaTeX's article document is \topmargin = 16 pt.
-% \headheight = 12pt, and .
-
 \setlength{\topmargin }{00 pt}
 
-% This is the amount of space between the TOP OF THE BODY and THE BOTTOM OF THE FIRST 
-% line of text on the page. According to "Math Into LaTeX" by George Gratzer the default
-% value for LaTeX's article documents is \topskip = ?? pt.
 
 \setlength{\topskip}{12 pt}
 
-% This is the amount of space between the last line on the page and the footer. According 
-% to "The LaTeX Companion" and "Math Into LaTeX" the default value is \footskip = 30 pt.
 
 \setlength{\footskip}{18 pt}
 
-% I like space between paragraphs, since it makes the document more readable. However, 
-% this does not seem to change the spacing between paragraphs contained in an item of a 
-% list.
 
-\setlength{\parskip}{12 pt} % default: \parskip        = 12  pt
-
-% Comment out the following line to use the default amount to indent the first line of 
-% each paragraph.
-
+\setlength{\parskip}{12 pt} 
 \setlength{\parindent}{00 pt}
-
-% Add an underline of text that breaks the line properly with \uline{text} ...
 
 \usepackage[normalem]{ulem}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LOAD THE "enumitem" PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{enumitem}
 
@@ -117,38 +40,17 @@
 \setlength{\labelwidth}{00 pt}
 \setlength{\leftmargin}{0.0in}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Set Up The "Version" Package %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% This environment allows one to include text in the LaTeX file that is not printed when it
-% is compiled.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LOAD AMS LaTeX Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
-% Using the "amsart" or "amsbook" document class instead of the standard LaTeX "article"
-% document class provides all (or at least most) of the AMS math macros. However, it also
-% puts a colon in the description list environment, which I don't like.
-
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
 
-% Added by EGP for script fonts such as script L for a linear operator: \mathscr{L}
-
 \usepackage[mathscr]{euscript}
 
-% This package provides an arrow \longrightarrow, that is longer than AMSMATH's
-% \xrightarrow and \xrightarrow.
 
 \usepackage{extarrows} % (extensible arrows)
 
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SET UP THE "VERSION" PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% This environment allows one to include text in the LaTeX file that is not printed when % it is compiled
-
-% CAUTION: Do not use "space" as the name of a version environment, since it causes problems with LaTeX's memory
 
 \usepackage{version}
 
@@ -177,19 +79,6 @@
 \setlength{\abovecaptionskip}{24pt}
 \setlength{\belowcaptionskip}{24pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LOAD THE HYPERREF PACKAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% The basic usage with the standard settings is straightforward. Just load the package in 
-% the preamble, at the end of all the other packages but prior to other settings.
-
-% From the `Introduction' to the hyperref manual: Make sure it comes last of your loaded 
-% packages, to give it a fighting chance of not being over-written, since its job is to 
-% redefine many LATEX commands. Hopefully you will find that all cross-references work 
-% correctly as hypertext. For example, \section commands will produce a bookmark and a 
-% link, whereas \section* commands will only show links when paired with a corresponding 
-% \addcontentsline command.
-
-% I think the default values for "bookmarks" is 'false' and for "bookmarksopen" is 'false'
 
 \usepackage[bookmarksopen=false]{hyperref}
 
@@ -205,11 +94,6 @@
 
 \hypersetup{pdfauthor={Professor E.G. Puckett 2018}}
 
-% This is a package to remember when writing NSF proposals.
-
-% \usepackage[margin=1in]{geometry}
-
-% And here is another one ...
 
 %\usepackage{nopageno}
 
