@@ -158,62 +158,91 @@ University of California, Davis              &BS      & Computer Science        
     \item[] \textbf{\underline{Data Analysis and Visualization}}
     
       \begin{itemize}
-      	\item I have worked with computing numerical models on several super computers housed at TACC. Several of these computational experiments generated datasets on the order of terabytes. Using numerical and visualization libraries in python, I have created several easy to share Jupyter notebooks to obtain numerical measures such as computational accuracy, stability, Kolmogorov Entropy, and others. Data formats that I am familiar with include HDF5, VTK, NETCDF and ASCII. 
-        \item Jupyter Notebooks and Python - (Git: \href{https://github.com/hlokavarapu/Prospectus/blob/master/SlideDeck/MeetingPresentation.ipynb}{Deep Carbon}, \href{https://github.com/EGP-CIG-REU/SECOND_PARTICLE_PAPER/blob/master/00JUPYTER_NOTEBOOKS/egp_time_dependent_annulus_v-02/egp_time_dependent_annulus_v-02-Exact.ipynb}{Convergence Analysis}, and \href{https://github.com/hlokavarapu/Geology_Journal/tree/master/00JUPYTER}{more})
+      	\item I have worked with computing numerical models on several super computers housed at TACC. Several of these computational experiments generated datasets on the order of terabytes. Using numerical and visualization libraries in python, I have created several easy to share Jupyter notebooks to obtain numerical measures such as computational accuracy, stability, Kolmogorov Entropy, and others. Data formats that I am familiar with include HDF5, VTK, NETCDF and ASCII - (Git: \href{https://github.com/hlokavarapu/Prospectus/blob/master/SlideDeck/MeetingPresentation.ipynb}{Deep Carbon}, \href{https://github.com/EGP-CIG-REU/SECOND_PARTICLE_PAPER/blob/master/00JUPYTER_NOTEBOOKS/egp_time_dependent_annulus_v-02/egp_time_dependent_annulus_v-02-Exact.ipynb}{Convergence Analysis}, and \href{https://github.com/hlokavarapu/Geology_Journal/tree/master/00JUPYTER}{more})
         
-        \item In cases where the underlying dataset to analyze is less than several gigabytes, I have come to rely on using programming language R and its rich statistical libraries. The ease of use to write small scripts to quickly calculate statistical measures has moved me to prefer R over other remaining languages.
-        \item R - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/R_scripts}{Code})
+        \item In cases where the underlying dataset to analyze is less than several gigabytes, I have come to rely on using programming language R and its rich statistical libraries. The ease of use to write small scripts to quickly calculate statistical measures has moved me to prefer R over other remaining languages - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/R_scripts}{Code})
         
-        \item When dealing with extremely small datasets with the goal of quickly generating plots for discussion, I have come to rely on Gnuplot and its command line interface. Lately, I have been prefering python's matplotlib.pyplot module however.
-      	\item Gnuplot - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/Gnuplot_scripts}{Code})
+        \item When dealing with extremely small datasets with the goal of quickly generating plots for discussion, I have come to rely on Gnuplot and its command line interface. Lately, I have been prefering python's matplotlib.pyplot module however - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/Gnuplot_scripts}{Code})
         
-        \item Working with supercomputers with a predefined limit on core hour usage, I have developed experience making the most of the limited resources using various parallelization tricks. Many of these tricks require extensive experience with bash scripting in order to run numerous jobs, monitor the state of jobs, and data collection towards the end.
-        
-        \item Bash scripting - running numerous jobs, job monitoring, and data collection (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/slurm_scripts}{Code})
-      	
-        \item Paraview (Git: \href{https://github.com/hlokavarapu/computational_tools/blob/master/Paraview_scripts/Find_timestep_given_nondim_time_2_comp.py}{Code})
-       
-        \item Visit
-                
+        \item Working with supercomputers with a predefined limit on core hour usage, I have developed experience making the most of the limited resources using various parallelization tricks. Many of these tricks require extensive experience with bash scripting in order to run numerous jobs, monitor the state of jobs, and data collection towards the end - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/slurm_scripts}{Code})
+      	                
       \end{itemize}
     
     \item[] \textbf{\underline{Deep Learning}}
       \begin{itemize}
-        \item[] \textbf{\underline{Coursera Certifications}}
+        \item Participant of Kaggle competitions
+        \item Google cloud computing to train neural networks in a multi-GPU environment.
+        \item[] \textbf{\underline{Coursera Certifications:}}
         \begin{itemize}
           \item Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
           \item Neural Networks and Deep Learning
         \end{itemize}
-        \item Keras/Tensorflow
-        \item Tensorboard
-        \item Hyperparameter search
-        \item Embedding projection - PCA and T-SNE Analysis
       \end{itemize}
       
+    \item[] \textbf{\underline{GPU Experience}}
+    \begin{itemize}
+    		\item In order to resolve MHD dynamo of planets and stars, it is of utmost importance to resolve small scales. Due to the underlying mathematical principles, physical quantites of interest were transformed into spherical harmonic coefficients, whose computational complexity is O(N$^3$). Using CUDA in a multi-GPU environment, I pursed the optimization of spherical harmonic transform (SHT). Optimizations involved taking advantage of state of the art GPU libraries: CUDA Fast Fourier Transform (cuFFT) library, CUDA Basic Linear Algebra Subprograms (cuBLAS), and (CUB) library. This alogirthm was optimized to a time complexity of O(N$^2$logN) - \href{https://github.com/hlokavarapu/calypso/tree/concurrency/src/Cuda_libraries}{Dev branch})
+          	\item Profile and test optimizations using strong and weak scaling tests        	
+          	\item Published results as poster [4], [6] (see below) at the 2014, 2015 Annual Fall AGU Meetings
+    \end{itemize}
+    
+    \item[] \textbf{\underline{Supercomputing Experience}}
+    
+      \vskip 06pt 
+      
+      \begin{itemize}
+        
+        \item National Science Foundation (NSF) Texas Advanced Computing Center
+      
+      \begin{itemize}
+      	
+        \item \href{https://portal.xsede.org/tacc-stampede}{Stampede} and \href{https://portal.xsede.org/tacc-stampede2}{Stampede 2} - Ranked as 17th fastest supercomputer in top 500 list. Primarily utilized for runnining massive compuations using ASPECT to track interfaces in a multilayered buoyancy model over thousands of cores. Results and analysis were published in [1].
+        
+        \item \href{https://portal.xsede.org/tacc-maverick}{Maverick} - A multi-gpu Nvidia K20 cluster. Both development and analysis of optimzation of SHT was primarily conducted on this cluster. 
+        
+      \end{itemize}
+     \end{itemize}
+    
     \item[] \textbf{\underline{Open Source Code Development}}
     
       \begin{itemize}
       	
         \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) written in C++. I am one of the active contributors of this project.
+        
+            \begin{itemize}        
+            
+            \item Design and implementation of parallel particle generation algorithms. (Git: \href{https://github.com/geodynamics/aspect/pull/1266}{PR})
+           
+            \item Design and implementation of parallel particle interpolation algorithms including harmonic averaging and bilinear least squares. (Git PR: \href{https://github.com/geodynamics/aspect/pull/1949}{Harmonic Average}, \href{https://github.com/geodynamics/aspect/pull/1554}{Bilinear least squares})
+           
+            \item Design 2-D analytical solution to Stokes equations in order to benchmark the accuracy of particle algorithms in ASPECT. (Git PR: \href{https://github.com/EGP-CIG-REU/aspect/tree/EGP_HVL_benchmark/benchmark/egp_hvl}{1}, \href{https://github.com/EGP-CIG-REU/aspect/tree/simple_annulus_benchmark/benchmarks/simple_annulus}{2})
+                       
+            \item Execute strong and weak scaling tests for original draft of publication [3] (see below), which was not included in the final publication              
+            
+            \item ASPECT contributions Git \href{https://github.com/geodynamics/aspect/commits?author=hlokavarapu}{timeline}
+
+           \end{itemize}
       
       \item State of-the-art model of the Earth's Geodynamo,
       \href{https://geodynamics.org/cig/software/calypso/}{Calypso} written in FORTRAN 90. I am the 3/4 most active contributor.
       
+         \begin{itemize}
+          	\item Calypso contributions Git \href{https://github.com/geodynamics/calypso/commits/Legendre_transform_w_symmetry}{timeline}
+          \end{itemize}
+      
       \item Generalized reservoir modeling library (MS Thesis Project: \href{https://github.com/hlokavarapu/resecore.git}{Resecore}) written in Python
             
     \end{itemize}
-                                            
-    \item[] \textbf{\underline{Parallel Processing and High Performance Computing}}
-          
-      \vskip 06pt
-      
-      \begin{description}
+                                      
     
-    	\item[] \textbf{Tools}
-     
-        \vskip 06pt   
-        
-        \begin{itemize} 
+  
+
+    \item[] \textbf{\underline{Tools}}
+    
+      \begin{itemize}
+        \item Paraview (Git: \href{https://github.com/hlokavarapu/computational_tools/blob/master/Paraview_scripts/Find_timestep_given_nondim_time_2_comp.py}{Code})
+
+        \item Visit
         
           \item CMake, CTest - Build tool and Unit testing - (Git PR: \href{https://github.com/hlokavarapu/computational_tools/tree/master/ASPECT_build_scripts}{1}, \href{https://github.com/geodynamics/calypso/pull/4}{2})
       
@@ -226,93 +255,16 @@ University of California, Davis              &BS      & Computer Science        
           \item SLURM HPC scheduler
           
           \item Profilers: gdb and cuda-gdb
-      
       \end{itemize}
       
-    \item[] \textbf{Machines}
-    
-      \vskip 06pt 
-      
-      \begin{itemize}
-        
-        \item National Science Foundation (NSF) Texas Advanced Computing Center
-      
-      \begin{itemize}
-      	
-        \item \href{https://portal.xsede.org/tacc-stampede}{Stampede} and \href{https://portal.xsede.org/tacc-stampede2}{Stampede 2}
-        
-        \item \href{https://portal.xsede.org/tacc-maverick}{Maverick} 
-        
-      \end{itemize}
-  
-      \item UCD Math and Physical Sciences (MPS) HPC Cluster
-      
-        \begin{itemize}
-      	
-          \item \href{https://wiki.cse.ucdavis.edu/support/systems/ymir}{Ymir} - 38 Dual socket, quad core (Intel E5620 2.4 GHz CPUs) with 24 GB RAM.
-        
-          \item \href{https://wiki.cse.ucdavis.edu/support/systems/peloton}{Peloton} - 55 nodes with 64GB ram, 16 cores/32 threads (Intel Xeon E5-2630v3 Processors).
-        
-        \end{itemize}
-  
-      \end{itemize}  
-
-    \item[] \textbf{Computations}
-    
-      \vskip 06pt
-      
-
-      \begin{itemize}
-      	
-        \item \href{https://geodynamics.org/cig/software/aspect/}{ASPECT}
-              
-          \begin{itemize}        
-            
-            \item Design and implementation of parallel particle generation algorithms. (Git: \href{https://github.com/geodynamics/aspect/pull/1266}{PR})
-           
-            \item Design and implementation of parallel particle interpolation algorithms including harmonic averaging and bilinear least squares. (Git PR: \href{https://github.com/geodynamics/aspect/pull/1949}{Harmonic Average}, \href{https://github.com/geodynamics/aspect/pull/1554}{Bilinear least squares})
-           
-            \item Design 2-D analytical solution to Stokes equations in order to benchmark the accuracy of particle algorithms in ASPECT. (Git PR: \href{https://github.com/EGP-CIG-REU/aspect/tree/EGP_HVL_benchmark/benchmark/egp_hvl}{1}, \href{https://github.com/EGP-CIG-REU/aspect/tree/simple_annulus_benchmark/benchmarks/simple_annulus}{2})
-           
-            \item Refactor existing benchmarks using C++ inheritance principles to reduce repetitive code (Git PR: \href{https://github.com/geodynamics/aspect/pull/1498}{SolCx}, \href{https://github.com/geodynamics/aspect/pull/1539}{SolKz}, \href{https://github.com/geodynamics/aspect/pull/1345}{Compositional Fields})
-            
-            \item Implementation of Schmeling subducting slab benchmark from Schmeling et al., Physics of the Earth and Planetary Interiors 171 (2008) 198--223 
-            
-            \item Execute strong and weak scaling tests for original draft of publication [3] (see below), which was not included in the final publication              
-            
-            \item ASPECT contributions Git \href{https://github.com/geodynamics/aspect/commits?author=hlokavarapu}{timeline}
-
-           \end{itemize}
-
-        \item       \href{https://geodynamics.org/cig/software/calypso/}{Calypso}         
-
-          \begin{itemize}
-          	
-          	\item Optimization of Legendre Polynomial transform in a spherical geometry using CUDA for Nvidia GPUs 
-          	
-          	\item Design different implementations using CUDA Fast Fourier Transform (cuFFT) library, CUDA Basic Linear Algebra Subprograms (cuBLAS), and (CUB) library. (Git code: \href{https://github.com/geodynamics/calypso/pull/3}{PR}, \href{https://github.com/hlokavarapu/calypso/tree/concurrency/src/Cuda_libraries}{Dev branch})
-          	
-          	\item Profile and test optimizations using strong and weak scaling tests
-          	
-          	\item Published results as poster [4], [6] (see below) at the 2014, 2015 Annual Fall AGU Meetings
-          	
-          	\item Calypso contributions Git \href{https://github.com/geodynamics/calypso/commits/Legendre_transform_w_symmetry}{timeline}
-          \end{itemize}
-           
-
-      \end{itemize}
-
-    
-    \end{description}
-      
-    \item[] \textbf{\underline{Outside Interests}}
+  \item[] \textbf{\underline{Outside Interests}}
     
       \begin{itemize}
         \item Virtual Reality - (Git: \href{https://github.com/hlokavarapu/VR-Experiments}{VR-Experiments} using A-Frame library) - JavaScript
         \item  3-D Design/Printing - Tinkercad
       \end{itemize}
-
   \end{description}
+  
 
 %\newpage
 
