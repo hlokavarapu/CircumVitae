@@ -170,7 +170,24 @@ University of California, Davis              &BS      & Computer Science        
     
     \item[] \textbf{\underline{Deep Learning}}
       \begin{itemize}
-        \item Participant of Kaggle competitions
+        \item Participant of Kaggle competitions:
+        	\begin{itemize}
+        	  \item House Prices: Advanced Regression Techniques
+        	    \begin{itemize}
+        	      \item Use of Keras library to develop a regression model
+        	      \item Employed feature selection methods, feature crosses, normalization of data input, removal of outliers, and transformation of input data to correct for heavy left skew distributions
+        	      \item In combination with tensorboard, executed a hyperparameter search to discover optimal number of fully connected layers, number of neurons per layer, activation functions, and learning rates.
+        	      \item Currently placed in the 34th percentile within the competition.
+        	    \end{itemize}
+        	  \item Human Protein Atlas Image Classification
+        	    \begin{itemize}
+        	      \item This competitions' challenges included multilabel classification, 4 channel input images, and imbalanced dataset. Less than 1\% of the training image data consisted of 5 classes. Of the remaining classes, 3-4 classes were represented by 70\% of the data set.
+        	      \item My submitted model took advantage of input images resized to 128 by 128, focal loss function, data augmentation, external data, and oversampling to counteract the imbalanced dataset. 
+        	      \item Custom metrics were written to better measure the improvements of variuos experiments.
+        	      \item Experiments included transfer learning to VGG network, different network architectures such as Conv2D sequential architecture, and Netowk in Network architectures and more.
+        	      \item After the conclusion of the competition, the top 1\% of the models consisted of ensembles of extremely large models handling input sizes of 512 by 512, 1024 by 1024 in compbination with transfer learning. Realizing the importance of computational power, I am currently experimenting with google cloud and their machine learning engine.
+        	    \end{itemize}
+        	\end{itemize}
         \item Google cloud computing to train neural networks in a multi-GPU environment.
         \item[] \textbf{\underline{Coursera Certifications:}}
         \begin{itemize}
