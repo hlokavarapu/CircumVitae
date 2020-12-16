@@ -168,21 +168,28 @@ CUDA unbound (CUB) library.
 \begin{center}
 	\textbf{\underline{Programming Languages, Computing Skills, and Work Experience}}
 \end{center}
-
 % * Note that all "Git" links are personal code samples 
 
   \begin{description}
  	\item[] \textbf{\underline{Fullstack Service Development}}
+ 	
+ 	Authored and designed Golang tool vInfra to generate virtual network topology, supporting servers and switches, using GNS3. Once populated, the switches were zero touch provisioned with identical configuration as Uber's on-premise data center. The tool was used to generate Uber's data center backbone to help network engineers investigate outage/failure scenarios.
+ 	
+ 	Designed, architected and authored:
  	\begin{itemize}
- 	  \item Designed SQL schema to store hardware inventory, hardware reservation, and test case definition/result data
- 	  \item Designed, architected and authored several golang services that:
- 	    \begin{itemize}
- 	      \item stores an inventory of hardware assets and allows for employees to reserve assets
-          \item stores test case definitions such as regression, stress, and/or benchmarking for a set of hardware assets
-          \item stores test case results for a group of hardware assets
- 	    \end{itemize}
- 	  \item Wrote a front end application to visualize test case defintions using React and Base Web
+ 	  \item a service that stores an inventory of hardware assets and allows fr employees to reserve assets
+ 	  \item a service that stores test case definitions such as regression , stress, and/or benchmarking for a set of hardware assets
+ 	  \item a service that stores test case results for a group of hardware assets
+ 	  \item a front end application to visualize test case definitions using React and Base Web
  	\end{itemize}
+ 	
+ 	Day-to-day management of hardware lab assets included: 
+ 	\begin{itemize}
+ 	  \item net booting servers with different OS flavors
+ 	  \item managing and allocating IP addresses for switches, servers, and PDUs using ISC DHCP server
+ 	  \item helping rack servers and switches including clean cable management
+ 	\end{itemize}
+ 	
     \item[] \textbf{\underline{Data Analysis and Visualization}}
     
       \begin{itemize}
