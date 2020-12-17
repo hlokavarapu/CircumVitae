@@ -79,7 +79,6 @@
 \setlength{\abovecaptionskip}{24pt}
 \setlength{\belowcaptionskip}{24pt}
 
-
 \usepackage[bookmarksopen=false]{hyperref}
 
 \hypersetup{colorlinks=true}
@@ -100,313 +99,77 @@
 \usepackage{bbold}
 \usepackage{wasysym}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{(925)-998-5486 \\ lokavarapuh@gmail.com}
+\lhead{\href{https://github.com/hlokavarapu}{https://github.com/hlokavarapu}}
 \setlength{\parindent}{00pt}
 
 \begin{document}
 
 \begin{center}
-  \textbf{Harsha Lokavarapu}                                            \\ [06pt]
-  Mobile: (925) 998-5486                                                \\
- \href{mailto:lokavarapuh@gmail.com}{lokavarapuh@gmail.com}             \\
-  \href{https://github.com/hlokavarapu}{https://github.com/hlokavarapu} \\ [3pt]
+  \textbf{Harsha Lokavarapu}
 \end{center}
+\vskip -10pt
 
-%\href{https://orcid.org/0000-0002-6589-7395}{ORCID ID}
-
-\vskip 12pt
-
-\begin{center}
-	\textbf{\underline{Education}}
-\end{center}
+\textbf{\underline{Education}}
 
 \vskip -06pt
 
-\begin{center}
 \begin{tabular}{llll}
 University of California, Davis              &MS       &Computational Geodynamics      & 2018 \\
                                              &       &Thesis Advisor: \href{http://geology.ucdavis.edu/people/faculty/kellogg.php}{Professor Louise H. Kellogg}        &  \\
 University of California, Davis              &BS      & Computer Science                         & 2015       \\
                                              &Minor   & Applied Mathematics                      & 2015
 \end{tabular}
-\end{center}
 
-\vskip 18pt
-
-\begin{center}
-	\textbf{\underline{Appointments}}
-\end{center}
-
-\begin{center}
-\begin{tabular}{lll}
-2019-2020     & Uber & Software Engineer \\
-2014-2017     & \href{https://geodynamics.org/cig/}{Computational Infrastructure for Geodynamics} (CIG) & Junior Assistant Programmer \\
-2012       & \href{https://www.humana.com}{Certify Data Systems (Humana)} & Internship as Code Developer
-\end{tabular}
-\end{center}
-
-\vskip 18pt
-
-\begin{center}
-	\textbf{\underline{Summary}}
-\end{center}
-
-\begin{itemize}
-	\item Designed and authored multiple micro-services for hardware asset management using Golang
-	\item Built front-end applications using React
-	\item Active Kaggle competitor with experience in following ML algorithms: convolution networks, sequence models, decision trees and boosted models
-	\item Used Google cloud computing to train Neural Networks in multi-GPU
-environment.
-	\item Optimized spherical harmonic transform algorithm using GPU accelerated libraries CUDA Fast Fourier Transform (cuFFT) library,
-CUDA Basic Linear Algebra Subprograms (cuBLAS) library, and
-CUDA unbound (CUB) library.
-	\item Worked with large datasets to perform data analysis
-
-\end{itemize}
-
-\vskip 18pt
-
-\begin{center}
-	\textbf{\underline{Programming Languages, Computing Skills, and Work Experience}}
-\end{center}
 % * Note that all "Git" links are personal code samples 
 
-  \begin{description}
- 	\item[] \textbf{\underline{Fullstack Service Development}}
- 	
- 	Authored and designed Golang tool vInfra to generate virtual network topology, supporting servers and switches, using GNS3. Once populated, the switches were zero touch provisioned with identical configuration as Uber's on-premise data center. The tool was used to generate Uber's data center backbone to help network engineers investigate outage/failure scenarios.
- 	
- 	Designed, architected and authored:
- 	\begin{itemize}
- 	  \item a service that stores an inventory of hardware assets and allows fr employees to reserve assets
- 	  \item a service that stores test case definitions such as regression , stress, and/or benchmarking for a set of hardware assets
- 	  \item a service that stores test case results for a group of hardware assets
- 	  \item a front end application to visualize test case definitions using React and Base Web
- 	\end{itemize}
- 	
- 	Day-to-day management of hardware lab assets included: 
- 	\begin{itemize}
- 	  \item net booting servers with different OS flavors
- 	  \item managing and allocating IP addresses for switches, servers, and PDUs using ISC DHCP server
- 	  \item helping rack servers and switches including clean cable management
- 	\end{itemize}
- 	
-    \item[] \textbf{\underline{Data Analysis and Visualization}}
-    
-      \begin{itemize}
-      	\item I have worked with computing numerical models on several super computers housed at TACC. Several of these computational experiments generated datasets on the order of terabytes. Using numerical and visualization libraries in python, I have created several easy to share Jupyter notebooks to obtain numerical measures such as computational accuracy, stability, Kolmogorov Entropy, and others. Data formats that I am familiar with include HDF5, VTK, NETCDF and ASCII - (Git: \href{https://github.com/hlokavarapu/Prospectus/blob/master/SlideDeck/MeetingPresentation.ipynb}{Deep Carbon}, \href{https://github.com/EGP-CIG-REU/SECOND_PARTICLE_PAPER/blob/master/00JUPYTER_NOTEBOOKS/egp_time_dependent_annulus_v-02/egp_time_dependent_annulus_v-02-Exact.ipynb}{Convergence Analysis}, and \href{https://github.com/hlokavarapu/Geology_Journal/tree/master/00JUPYTER}{more})
-        
-        \item In cases where the underlying dataset to analyze is less than several gigabytes, I have come to rely on using programming language R and its rich statistical libraries. The ease of use to write small scripts to quickly calculate statistical measures has moved me to prefer R over other remaining languages - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/R_scripts}{Code})
-        
-        \item When dealing with extremely small datasets with the goal of quickly generating plots for discussion, I have come to rely on Gnuplot and its command line interface. Lately, I have been prefering python's matplotlib.pyplot module however - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/Gnuplot_scripts}{Code})
-        
-        \item Working with supercomputers with a predefined limit on core hour usage, I have developed experience making the most of the limited resources using various parallelization tricks. Many of these tricks require extensive experience with bash scripting in order to run numerous jobs, monitor the state of jobs, and data collection towards the end - (Git: \href{https://github.com/hlokavarapu/computational_tools/tree/master/slurm_scripts}{Code})
-      	                
-      \end{itemize}
-    
-    \item[] \textbf{\underline{Deep Learning}}
-      \begin{itemize}
-        \item Participant of Kaggle competitions:
-        	\begin{itemize}
-        	  \item House Prices: Advanced Regression Techniques
-        	    \begin{itemize}
-        	      \item Use of Keras library to develop a regression model
-        	      \item Employed feature selection methods, feature crosses, normalization of data input, removal of outliers, and transformation of input data to correct for heavy left skew distributions
-        	      \item In combination with tensorboard, executed a hyperparameter search to discover optimal number of fully connected layers, number of neurons per layer, activation functions, and learning rates.
-        	      \item Currently placed in the 34th percentile within the competition.
-        	    \end{itemize}
-        	  \item Human Protein Atlas Image Classification
-        	    \begin{itemize}
-        	      \item This competitions' challenges included multilabel classification, 4 channel input images, and imbalanced dataset. Less than 1\% of the training image data consisted of 5 classes. Of the remaining classes, 3-4 classes were represented by 70\% of the data set.
-        	      \item My submitted model took advantage of input images resized to 128 by 128, focal loss function, data augmentation, external data, and oversampling to counteract the imbalanced dataset. 
-        	      \item Custom metrics were written to better measure the improvements of variuos experiments.
-        	      \item Experiments included transfer learning to VGG network, different network architectures such as Conv2D sequential architecture, and Netowk in Network architectures and more.
-        	      \item After the conclusion of the competition, the top 1\% of the models consisted of ensembles of extremely large models handling input sizes of 512 by 512, 1024 by 1024 in compbination with transfer learning. Realizing the importance of computational power, I am currently experimenting with google cloud and their machine learning engine.
-        	    \end{itemize}
-        	\end{itemize}
-        \item Google cloud computing to train neural networks in a multi-GPU environment.
-        \item[] \textbf{\underline{Coursera Certifications:}}
-        \begin{itemize}
-          \item Convolutional Neural Networks
-          \item Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
-          \item Neural Networks and Deep Learning
-        \end{itemize}
-      \end{itemize}
-      
-    \item[] \textbf{\underline{GPU Experience}}
-    \begin{itemize}
-    		\item In order to resolve MHD dynamo of planets and stars, it is of utmost importance to resolve small scales. Due to the underlying mathematical principles, physical quantites of interest were transformed into spherical harmonic coefficients, whose computational complexity is O(N$^3$). Using CUDA in a multi-GPU environment, I pursed the optimization of spherical harmonic transform (SHT). Optimizations involved taking advantage of state of the art GPU libraries: CUDA Fast Fourier Transform (cuFFT) library, CUDA Basic Linear Algebra Subprograms (cuBLAS), and (CUB) library. This alogirthm was optimized to a time complexity of O(N$^2$logN) - \href{https://github.com/hlokavarapu/calypso/tree/concurrency/src/Cuda_libraries}{Dev branch})
-          	\item Profile and test optimizations using strong and weak scaling tests        	
-          	\item Published results as poster [4], [6] (see below) at the 2014, 2015 Annual Fall AGU Meetings
-    \end{itemize}
-    
-    \item[] \textbf{\underline{Supercomputing Experience}}
-    
-      \vskip 06pt 
-      
-      \begin{itemize}
-        
-        \item National Science Foundation (NSF) Texas Advanced Computing Center
-      
-      \begin{itemize}
-      	
-        \item \href{https://portal.xsede.org/tacc-stampede}{Stampede} and \href{https://portal.xsede.org/tacc-stampede2}{Stampede 2} - Ranked as 17th fastest supercomputer in top 500 list. Primarily utilized for runnining massive compuations using ASPECT to track interfaces in a multilayered buoyancy model over thousands of cores. Results and analysis were published in [1].
-        
-        \item \href{https://portal.xsede.org/tacc-maverick}{Maverick} - A multi-gpu Nvidia K20 cluster. Both development and analysis of optimzation of SHT was primarily conducted on this cluster. 
-        
-      \end{itemize}
-     \end{itemize}
-    
-    \item[] \textbf{\underline{Open Source Code Development}}
-    
+\vskip -10pt
+\textbf{\underline{Employment}}
+
+		{\textcolor{teal}{Software Engineer} \hfill \textcolor{teal}{Uber} \hfill \textcolor{teal}{2019-2020}}
+		\begin{itemize}
+ 			\item Designed and developed automated CICD and testing platforms for Uber Infrastructure.
+	 		\item Designed, architected and authored:
+		 	\begin{itemize}
+		 	  \item a service that stores an inventory of hardware assets and allows for employees to reserve assets
+		 	  \item a service that stores test case definitions such as regression, stress, and/or benchmarking for a set of hardware assets
+		 	  \item a service that stores test case results for a group of hardware assets
+		 	  \item a front end application to visualize test case definitions using React and Base Web
+		 	\end{itemize}
+	 	\end{itemize}
+
+	{\textcolor{teal}{Junior Assistant Programmer} \hfill \textcolor{teal}{Computational Infrastructure for Geodynamics} \hfill \textcolor{teal}{2014-2017}}
+
       \begin{itemize}
       	
         \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) written in C++. I am one of the active contributors of this project.
         
             \begin{itemize}        
-            
-            \item Design and implementation of parallel particle generation algorithms. (Git: \href{https://github.com/geodynamics/aspect/pull/1266}{PR})
-           
-            \item Design and implementation of parallel particle interpolation algorithms including harmonic averaging and bilinear least squares. (Git PR: \href{https://github.com/geodynamics/aspect/pull/1949}{Harmonic Average}, \href{https://github.com/geodynamics/aspect/pull/1554}{Bilinear least squares})
-           
-            \item Design 2-D analytical solution to Stokes equations in order to benchmark the accuracy of particle algorithms in ASPECT. (Git PR: \href{https://github.com/EGP-CIG-REU/aspect/tree/EGP_HVL_benchmark/benchmark/egp_hvl}{1}, \href{https://github.com/EGP-CIG-REU/aspect/tree/simple_annulus_benchmark/benchmarks/simple_annulus}{2})
-                       
-            \item Execute strong and weak scaling tests for original draft of publication [3] (see below), which was not included in the final publication              
-            
-            \item ASPECT contributions Git \href{https://github.com/geodynamics/aspect/commits?author=hlokavarapu}{timeline}
-
-           \end{itemize}
+            	\item Designed and implemented parallel particle generation algorithms
+            	\item Designed and implemented parallel particle interpolation algorithms including harmonic averaging and bilinear least squares
+            	\item Designed 2-D analytical solution to Stokes equations in order to benchmark the accuracy of particle algorithms in ASPECT
+			\end{itemize}
       
-      \item State of-the-art model of the Earth's Geodynamo,
-      \href{https://geodynamics.org/cig/software/calypso/}{Calypso} written in FORTRAN 90. I am the 3/4 most active contributor.
-      
-         \begin{itemize}
-          	\item Calypso contributions Git \href{https://github.com/geodynamics/calypso/commits/Legendre_transform_w_symmetry}{timeline}
-          \end{itemize}
-      
-      \item Generalized reservoir modeling library (MS Thesis Project: \href{https://github.com/hlokavarapu/resecore.git}{Resecore}) written in Python
-            
-    \end{itemize}
-                                      
-    
+		\item State of-the-art model of the Earth's Geodynamo,
+		\href{https://geodynamics.org/cig/software/calypso/}{Calypso} written in FORTRAN 90. I am the 3/4 most active contributor.
   
-
-    \item[] \textbf{\underline{Tools}}
+         	\begin{itemize}
+          		\item optimized spherical harmonic transform using cutting-edge GPU hardware with CUDA
+          		\item executed strong and weak scaling tests on supercomputer Maverick.
+          	\end{itemize}
+            
+	\end{itemize}
     
-      \begin{itemize}
-        \item Structured Query Language
-        \item React and Base Web for building front end applications
-        \item GNS3 virtualization platform
-        \item Zero-touch provisioning Arista and Juniper switches
-        \item ISC DHCP server
-        \item Paraview (Git: \href{https://github.com/hlokavarapu/computational_tools/blob/master/Paraview_scripts/Find_timestep_given_nondim_time_2_comp.py}{Code})
-        \item Visit
-        \item CMake, CTest - Build tool and Unit testing - (Git PR: \href{https://github.com/hlokavarapu/computational_tools/tree/master/ASPECT_build_scripts}{1}, \href{https://github.com/geodynamics/calypso/pull/4}{2})
-        \item CUDA - (Git: \href{https://github.com/geodynamics/calypso/pull/3}{PR})(SHT = Spherical Harmonic Transform) 
-        \item Distributed memory parallelism - MPI for C++ and FORTRAN   
-        \item Shared memory parallelism - openMP
-        \item SLURM HPC scheduler          
-        \item Profilers: gdb and cuda-gdb
-      \end{itemize}
-      
-  \item[] \textbf{\underline{Outside Interests}}
-    
-      \begin{itemize}
-        \item Virtual Reality - (Git: \href{https://github.com/hlokavarapu/VR-Experiments}{VR-Experiments} using A-Frame library) - JavaScript
-        \item  3-D Design/Printing - Tinkercad
-      \end{itemize}
-  \end{description}
-  
-
-%\newpage
-
-\vskip 12pt
-
-\begin{center}
-  \textbf{\underline{Publications}}
-\end{center}
-
-\noindent
-\textbf{\underline{Refereed Journal Publications}}
-
-%\vskip 12pt
-
-\noindent
-\underline{Submitted}
-
-\hangindent 20pt
-[1]~L.~H.~Kellogg, D. L.~Turcotte, M.~Weisfeiler, $\textrm{H.~Lokavarapu}^*$, S.~Mukhopadhyay, (2018) 
-``Implications of a Reservoir Model for the
-Evolution of Deep Carbon'', 
-\textit{Earth and Planetary Science Letters}, Ms. Ref. No.:  EPSL-D-17-01055
-
-\noindent
-\underline{Accepted}
-
-\hangindent 20pt
-[2]~R.~Gassmoeller,  $\textrm{H.~Lokavarapu}^*$, E.~Heien, E. G.~Puckett, and W.~Bangerth, (2018) 
-``Flexible and scalable particle-in-cell methods with adaptive mesh refinement for geodynamic computations'', 
-\textit{Geochemistry, Geophysics, Geosystems} manuscript 2018GC007508R 
-\href{https://www.math.ucdavis.edu/~egp/PUBLICATIONS/JOURNAL_ARTICLES/ACCEPTED/RG-HL-EH-EGP-WB-2018.pdf}{View Accepted Manuscript}
-
-\noindent
-\underline{Appeared}
-
-\vskip 06pt
-
-\hangindent 20pt
-[3]~E. G.~Puckett, D. L.~Turcotte, L.~H.~Kellogg,  $\mathrm{Y.~He}^{\dagger}$, $\mathrm{J.~M.~Robey}^{*}$, and 
-$\mathrm{H.~Lokavarapu}^{@}$ (2018)
-``New numerical approaches for modeling thermochemical convection in a compositionally stratified fluid'', 
-Special issue of . \textit{Physics of the Earth and Planetary Interiors} associated with the 15th Studies of the Earth's Deep Interior (SEDI) Symposium (\textit{Phys. Earth. Planet. In.)} \textbf{276}:10–35, 10.1016/j.pepi.2017.10.004
-\href{https://www.math.ucdavis.edu/~egp/PUBLICATIONS/JOURNAL_ARTICLES/APPEARED/2018/EGP-DLT-YH-HL-JMR-LHK-2018.pdf}{View Article}
-
-\noindent
-\textbf{\underline{Poster Presentations}}
-
-% \vskip 12pt
-
-\hangindent 20pt
-[1]~L.~H.~Kellogg, $\mathrm{H.~Lokavarapu}^{*}$, D. L.~Turcotte, and S.~Mukhopadhyay (2017) 
-``A reservoir model study of the flux of carbon from the atmosphere, to the continental crust, to the mantle'', 
-\textit{Annual Geophysical Union Fall Meeting 2017}
-\href{http://adsabs.harvard.edu/abs/2017AGUFMDI14A..06K}{View Abstract}
-
-\hangindent 20pt
-[2]~J.~Jiang, A.~P.~Kaloti, H.~R.~Levinson, N.~Nguyen, E.~G.~Puckett, and $\mathrm{H.~Lokavarapu}^{@}$ (2016) 
-``Benchmark Results Of Active Tracer Particles In The Open Souce Code ASPECT For Modelling Convection In The Earth's Mantle'', 
-\textit{Annual Geophysical Union Fall Meeting 2016}
-\href{http://adsabs.harvard.edu/abs/2016AGUFM.T23C2946J}{View Abstract}
-
-\hangindent 20pt
-[3]~E.~G.~Puckett, D. L.~Turcotte, L.~H.~Kellogg, $\mathrm{H.~Lokavarapu}^{@}$,  $\mathrm{Y.~He}^{\dagger}$, and $\mathrm{J.~M.~Robey}^{*}$ (2016) 
-``New Numerical Approaches To thermal Convection In A Compositionally Stratified Fluid'', 
-\textit{Annual Geophysical Union Fall Meeting 2016}
-\href{http://adsabs.harvard.edu/abs/2016AGUFMDI23A2589P}{View Abstract}
-
-\hangindent 20pt
-[4]~$\mathrm{H.~Lokavarapu}^{@}$, and H.~Matsui (2015) 
-``Optimization of Parallel Legendre Transform using Graphics Processing Unit (GPU) for a Geodynamo Code'', 
-\textit{Annual Geophysical Union Fall Meeting 2015}
-\href{http://adsabs.harvard.edu/abs/2015AGUFMGP43B1253L}{View Abstract}
-
-\hangindent 20pt
-[5]~J.~A.~Russo, E.~H.~Studley, $\mathrm{H.~Lokavarapu}^{@}$, I.~Cherkashin, and E.~G.~Puckett (2014) 
-``A New Monotonicity-Preserving Numerical Method for Approximating Solutions to the Rayleigh-Benard Equations'', 
-\textit{Annual Geophysical Union Fall Meeting 2014}
-\href{http://adsabs.harvard.edu/abs/2014AGUFMDI11A4258R}{View Abstract}
-
-\hangindent 20pt
-[6]~$\mathrm{H.~Lokavarapu}^{@}$, H.~Matsui, and E.~M.~Heien (2014) 
-``Parallelization of the Legendre Transform for a Geodynamics Code'', 
-\textit{Annual Geophysical Union Fall Meeting 2014}
-\href{http://adsabs.harvard.edu/abs/2014AGUFMDI11A4255L}{View Abstract}
-
-\vskip 18pt
-
-$\phantom{0}^@$Undergraduate Student        \\
-$\phantom{0}^*$Graduate Student             \\
-$\phantom{0}^{\dagger}$Postdoctoral Scholar
-
+	\textcolor{teal}{Software Developer, Intern} \hfill \textcolor{teal}{Humana} \hfill \textcolor{teal}{2012}
+		
+		\begin{itemize}
+			\item Wrote puppet manifests to install Healthdock's software stack for clients
+			\item Written Puppet manifests include Apache Web Server, Tomcat, Oracle, Avahi, Samba, Java, Apelon, and Healthdock
+		\end{itemize}
+	
+\textbf{\underline{Skills:}} C++, Python, Go, Unix, CUDA, Git (\emph{familiar}): JavaScript, SQL
 
 
 \end{document}
