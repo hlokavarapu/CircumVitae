@@ -130,13 +130,24 @@ University of California, Davis              &BS      & Computer Science        
 
 		{\textcolor{teal}{Software Engineer} \hfill \textcolor{teal}{Uber} \hfill \textcolor{teal}{2019-2020}}
 		\begin{itemize}
- 			\item Designed and developed automated CICD and testing platforms for Uber Infrastructure.
-	 		\item Designed, architected and authored:
+			\item Developed vInfra, a system to generate virtual infrastructure using an emulator
+			\begin{itemize}
+				\item used to generate Uber's on-prem backbone
+				\item used by network ops to investigate network failures
+			\end {itemize}
+			
+			\item Developed IRS, a golang command line tool to track inventory and reserve assets
+			\begin{itemize}
+				\item designed Service Now database schema to store reservations
+				\item authored scripted endpoint in Service Now to handle REST API requests
+				\item developed and implemented Thrift and gRPC API for reserving assets
+			\end {itemize}
+			
+			\item Developed Metere, a repository for test case definitions and test case results
 		 	\begin{itemize}
-		 	  \item a service that stores an inventory of hardware assets and allows for employees to reserve assets
-		 	  \item a service that stores test case definitions such as regression, stress, and/or benchmarking for a set of hardware assets
-		 	  \item a service that stores test case results for a group of hardware assets
-		 	  \item a front end application to visualize test case definitions using React and Base Web
+		 	  \item designed database schema using SQL
+		 	  \item developed and implemented thrift API to create, read, update and delete test case definitions and results
+		 	  \item developed front end application to interact with test case definitions and results repository using React and Base Web
 		 	\end{itemize}
 	 	\end{itemize}
 
@@ -144,20 +155,20 @@ University of California, Davis              &BS      & Computer Science        
 
       \begin{itemize}
       	
-        \item Advanced Solver for Problems in Earth's ConvecTion (\href{https://github.com/geodynamics/aspect}{ASPECT}) written in C++. I am one of the active contributors of this project.
+        \item Contributed to open-source numerical library \href{https://github.com/geodynamics/aspect}{ASPECT} written in C++
         
             \begin{itemize}        
-            	\item Designed and implemented parallel particle generation algorithms
-            	\item Designed and implemented parallel particle interpolation algorithms including harmonic averaging and bilinear least squares
-            	\item Designed 2-D analytical solution to Stokes equations in order to benchmark the accuracy of particle algorithms in ASPECT
+            	\item implemented parallel particle generation algorithms
+            	\item implemented parallel particle interpolation algorithms including harmonic averaging and bilinear least squares
+            	\item designed 2-D analytical solution to Stokes equations and benchmarked the accuracy of particle algorithms
 			\end{itemize}
       
-		\item State of-the-art model of the Earth's Geodynamo,
-		\href{https://geodynamics.org/cig/software/calypso/}{Calypso} written in FORTRAN 90. I am the 3/4 most active contributor.
+		\item Contributed to open-source numerical library,
+		\href{https://geodynamics.org/cig/software/calypso/}{Calypso} written in Fortran 90.
   
          	\begin{itemize}
-          		\item optimized spherical harmonic transform using cutting-edge GPU hardware with CUDA
-          		\item executed strong and weak scaling tests on supercomputer Maverick.
+          		\item implemented and optimized spherical harmonic transform using cutting-edge GPU hardware with CUDA in C++
+          		\item executed strong and weak scaling tests to measure performance on supercomputer Maverick
           	\end{itemize}
             
 	\end{itemize}
@@ -165,11 +176,12 @@ University of California, Davis              &BS      & Computer Science        
 	\textcolor{teal}{Software Developer, Intern} \hfill \textcolor{teal}{Humana} \hfill \textcolor{teal}{2012}
 		
 		\begin{itemize}
-			\item Wrote puppet manifests to install Healthdock's software stack for clients
+			\item Wrote puppet manifests to install Humana application Healthdock's software stack for clients
 			\item Written Puppet manifests include Apache Web Server, Tomcat, Oracle, Avahi, Samba, Java, Apelon, and Healthdock
 		\end{itemize}
 	
-\textbf{\underline{Skills:}} C++, Python, Go, Unix, CUDA, Git (\emph{familiar}): JavaScript, SQL
+\textbf{\underline{Skills:}} C++, CUDA, Git, Go, gRPC, Python, Unix \\
+(\emph{familiar with}): React, SQL
 
 
 \end{document}
