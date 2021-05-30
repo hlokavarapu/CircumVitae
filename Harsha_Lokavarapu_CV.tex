@@ -130,10 +130,13 @@ University of California, Davis              &BS      & Computer Science        
 
 		{\textcolor{teal}{Software Engineer} \hfill \textcolor{teal}{Uber} \hfill \textcolor{teal}{2019-2020}}
 		\begin{itemize}
-			\item Developed vInfra, a system to generate virtual infrastructure using an emulator
+			\item Developed vInfra, a system designed to build virtual infrastructure and aggregate network metrics for analysis
 			\begin{itemize}
-				\item used to generate Uber's on-prem backbone
-				\item used by network ops to investigate network failures
+				\item using a REST based emulator, GNS3, we built tooling to generate topology on-the-fly including traffic generator and Collectore, a micro-service that monitored switches
+				\item developed golang integration module to write metrics from Collectore to Kafka
+				\item designed HBase schema to efficiently read and write time-series data per topology
+				\item developed Flink data processing pipelines to ingest and summarize metric data from Kafka into HBase
+				\item generated Uber's on-prem backbone topology which helped network ops to investigate network outages due to configuration changes
 			\end {itemize}
 			
 			\item Developed IRS, a golang command line tool to track inventory and reserve assets
@@ -142,16 +145,9 @@ University of California, Davis              &BS      & Computer Science        
 				\item authored scripted endpoint in Service Now to handle REST API requests
 				\item developed and implemented Thrift and gRPC API for reserving assets
 			\end {itemize}
-			
-			\item Developed Metere, a repository for test case definitions and test case results
-		 	\begin{itemize}
-		 	  \item designed database schema using SQL
-		 	  \item developed and implemented thrift API to create, read, update and delete test case definitions and results
-		 	  \item developed front end application to interact with test case definitions and results repository using React and Base Web
-		 	\end{itemize}
 	 	\end{itemize}
 
-	{\textcolor{teal}{Junior Assistant Programmer} \hfill \textcolor{teal}{Computational Infrastructure for Geodynamics} \hfill \textcolor{teal}{2014-2017}}
+	{\textcolor{teal}{Software Research Engineer} \hfill \textcolor{teal}{Computational Infrastructure for Geodynamics} \hfill \textcolor{teal}{2014-2017}}
 
       \begin{itemize}
       	
@@ -180,8 +176,9 @@ University of California, Davis              &BS      & Computer Science        
 			\item Written Puppet manifests include Apache Web Server, Tomcat, Oracle, Avahi, Samba, Java, Apelon, and Healthdock
 		\end{itemize}
 	
-\textbf{\underline{Skills:}} C++, CUDA, Git, Go, gRPC, Python, Unix \\
-(\emph{familiar with}): React, SQL
+\textbf{\underline{Skills:}} Apache Flink, C++, Cassandra, Go, Hadoop, HBase, Java, Kafka, Python, SQL, Unix \\
+(\emph{familiar with}): CUDA, TensorFlow \\
+(\emph{certifications}): CUDA, TensorFlow
 
 
 \end{document}
